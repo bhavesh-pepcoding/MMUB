@@ -1,0 +1,19 @@
+{
+  "name": "wcat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {},
+  "bin": {
+    "wcat": "script.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wcat": "node script.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
