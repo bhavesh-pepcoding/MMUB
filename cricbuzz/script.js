@@ -2,7 +2,7 @@ require("chromedriver");
 
 let wd = require("selenium-webdriver");
 let chrome = require("selenium-webdriver/chrome");
-let browser = new wd.Builder().forBrowser('chrome').build();
+let browser = new wd.Builder().forBrowser('chrome').setChromeOptions(new chrome.Options().headless()).build();
 let matchId = 30880;
 let innings = 1;
 let batsmenColumns = ["playerName", "out", "runs", "ballsPlayed", "fours", "sixes", "strikeRate"];
