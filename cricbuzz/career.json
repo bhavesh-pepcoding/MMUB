@@ -1,7 +1,7 @@
 [
   {
     "playerName": "Philippe",
-    "battingCarrer": {
+    "bowlingCarrer": {
       "T20I": {
         "matches": "5",
         "innings": "5",
@@ -20,20 +20,20 @@
       "IPL": {
         "matches": "5",
         "innings": "5",
-        "notOut": "1",
+        "balls": "1",
         "runs": "78",
-        "highestScore": "33",
-        "average": "19.5",
-        "ballsPlayed": "77",
-        "strikeRate": "101.3",
-        "hundreds": "0",
-        "twoHundreds": "0",
-        "Fifties": "0",
-        "Fours": "9",
-        "Sixes": "1"
+        "wickets": "33",
+        "bestBowlingInInnings": "19.5",
+        "bestBowlingInMatch": "77",
+        "economy": "101.3",
+        "bowlingAverage": "0",
+        "bowlingStrikeRate": "0",
+        "fiveWicketsInning": "0",
+        "tenWicketsMatch": "9",
+        "undefined": "1"
       }
     },
-    "bowlingCarrer": {
+    "battingCarrer": {
       "T20I": {
         "matches": "5",
         "innings": "-",
@@ -66,7 +66,7 @@
   },
   {
     "playerName": "Finch (c)",
-    "battingCarrer": {
+    "bowlingCarrer": {
       "Test": {
         "matches": "5",
         "innings": "10",
@@ -115,20 +115,20 @@
       "IPL": {
         "matches": "87",
         "innings": "85",
-        "notOut": "6",
+        "balls": "6",
         "runs": "2005",
-        "highestScore": "88",
-        "average": "25.38",
-        "ballsPlayed": "1570",
-        "strikeRate": "127.71",
-        "hundreds": "0",
-        "twoHundreds": "0",
-        "Fifties": "14",
-        "Fours": "204",
-        "Sixes": "75"
+        "wickets": "88",
+        "bestBowlingInInnings": "25.38",
+        "bestBowlingInMatch": "1570",
+        "economy": "127.71",
+        "bowlingAverage": "0",
+        "bowlingStrikeRate": "0",
+        "fiveWicketsInning": "14",
+        "tenWicketsMatch": "204",
+        "undefined": "75"
       }
     },
-    "bowlingCarrer": {
+    "battingCarrer": {
       "Test": {
         "matches": "5",
         "innings": "1",
@@ -174,83 +174,21 @@
       "IPL": {
         "matches": "87",
         "innings": "5",
-        "balls": "43",
+        "notOut": "43",
         "runs": "67",
-        "wickets": "1",
-        "bestBowlingInInnings": "1/11",
-        "bestBowlingInMatch": "1/11",
-        "economy": "9.35",
-        "bowlingAverage": "67.0",
-        "bowlingStrikeRate": "43.0",
-        "fiveWicketsInning": "0",
-        "tenWicketsMatch": "0"
+        "highestScore": "1",
+        "average": "1/11",
+        "ballsPlayed": "1/11",
+        "strikeRate": "9.35",
+        "hundreds": "67.0",
+        "twoHundreds": "43.0",
+        "Fifties": "0",
+        "Fours": "0"
       }
     }
   },
   {
     "playerName": "Wade (wk)",
-    "battingCarrer": {
-      "Test": {
-        "matches": "36",
-        "innings": "63",
-        "notOut": "9",
-        "runs": "1613",
-        "highestScore": "117",
-        "average": "29.87",
-        "ballsPlayed": "3203",
-        "strikeRate": "50.36",
-        "hundreds": "4",
-        "twoHundreds": "0",
-        "Fifties": "5",
-        "Fours": "175",
-        "Sixes": "12"
-      },
-      "ODI": {
-        "matches": "94",
-        "innings": "80",
-        "notOut": "11",
-        "runs": "1777",
-        "highestScore": "100",
-        "average": "25.75",
-        "ballsPlayed": "2164",
-        "strikeRate": "82.12",
-        "hundreds": "1",
-        "twoHundreds": "0",
-        "Fifties": "10",
-        "Fours": "122",
-        "Sixes": "32"
-      },
-      "T20I": {
-        "matches": "38",
-        "innings": "29",
-        "notOut": "5",
-        "runs": "526",
-        "highestScore": "80",
-        "average": "21.92",
-        "ballsPlayed": "415",
-        "strikeRate": "126.75",
-        "hundreds": "0",
-        "twoHundreds": "0",
-        "Fifties": "3",
-        "Fours": "39",
-        "Sixes": "19"
-      },
-      "IPL": {
-        "matches": "3",
-        "innings": "3",
-        "notOut": "0",
-        "runs": "22",
-        "highestScore": "11",
-        "average": "7.33",
-        "ballsPlayed": "33",
-        "strikeRate": "66.67",
-        "hundreds": "0",
-        "twoHundreds": "0",
-        "Fifties": "0",
-        "Fours": "0",
-        "Sixes": "0"
-      }
-    },
     "bowlingCarrer": {
       "Test": {
         "matches": "36",
@@ -283,97 +221,35 @@
       "T20I": {
         "matches": "38",
         "innings": "-",
-        "balls": "-",
+        "notOut": "-",
         "runs": "-",
-        "wickets": "-",
-        "bestBowlingInInnings": "-",
-        "bestBowlingInMatch": "-",
-        "economy": "-",
-        "bowlingAverage": "-",
-        "bowlingStrikeRate": "-",
-        "fiveWicketsInning": "-",
-        "tenWicketsMatch": "-"
+        "highestScore": "-",
+        "average": "-",
+        "ballsPlayed": "-",
+        "strikeRate": "-",
+        "hundreds": "-",
+        "twoHundreds": "-",
+        "Fifties": "-",
+        "Fours": "-"
       },
       "IPL": {
         "matches": "3",
         "innings": "-",
-        "balls": "-",
+        "notOut": "-",
         "runs": "-",
-        "wickets": "-",
-        "bestBowlingInInnings": "-",
-        "bestBowlingInMatch": "-",
-        "economy": "-",
-        "bowlingAverage": "-",
-        "bowlingStrikeRate": "-",
-        "fiveWicketsInning": "-",
-        "tenWicketsMatch": "-"
+        "highestScore": "-",
+        "average": "-",
+        "ballsPlayed": "-",
+        "strikeRate": "-",
+        "hundreds": "-",
+        "twoHundreds": "-",
+        "Fifties": "-",
+        "Fours": "-"
       }
     }
   },
   {
     "playerName": "Maxwell",
-    "battingCarrer": {
-      "Test": {
-        "matches": "7",
-        "innings": "14",
-        "notOut": "1",
-        "runs": "339",
-        "highestScore": "104",
-        "average": "26.08",
-        "ballsPlayed": "570",
-        "strikeRate": "59.47",
-        "hundreds": "1",
-        "twoHundreds": "0",
-        "Fifties": "0",
-        "Fours": "33",
-        "Sixes": "7"
-      },
-      "ODI": {
-        "matches": "116",
-        "innings": "106",
-        "notOut": "12",
-        "runs": "3230",
-        "highestScore": "108",
-        "average": "34.36",
-        "ballsPlayed": "2575",
-        "strikeRate": "125.44",
-        "hundreds": "2",
-        "twoHundreds": "0",
-        "Fifties": "22",
-        "Fours": "309",
-        "Sixes": "116"
-      },
-      "T20I": {
-        "matches": "72",
-        "innings": "65",
-        "notOut": "9",
-        "runs": "1780",
-        "highestScore": "145",
-        "average": "31.79",
-        "ballsPlayed": "1120",
-        "strikeRate": "158.93",
-        "hundreds": "3",
-        "twoHundreds": "0",
-        "Fifties": "9",
-        "Fours": "147",
-        "Sixes": "93"
-      },
-      "IPL": {
-        "matches": "82",
-        "innings": "79",
-        "notOut": "11",
-        "runs": "1505",
-        "highestScore": "95",
-        "average": "22.13",
-        "ballsPlayed": "973",
-        "strikeRate": "154.68",
-        "hundreds": "0",
-        "twoHundreds": "0",
-        "Fifties": "6",
-        "Fours": "118",
-        "Sixes": "91"
-      }
-    },
     "bowlingCarrer": {
       "Test": {
         "matches": "7",
@@ -439,17 +315,17 @@
       "ODI": {
         "matches": "45",
         "innings": "42",
-        "notOut": "7",
+        "balls": "7",
         "runs": "1106",
-        "highestScore": "146",
-        "average": "31.6",
-        "ballsPlayed": "1199",
-        "strikeRate": "92.24",
-        "hundreds": "1",
-        "twoHundreds": "0",
-        "Fifties": "6",
-        "Fours": "96",
-        "Sixes": "37"
+        "wickets": "146",
+        "bestBowlingInInnings": "31.6",
+        "bestBowlingInMatch": "1199",
+        "economy": "92.24",
+        "bowlingAverage": "1",
+        "bowlingStrikeRate": "0",
+        "fiveWicketsInning": "6",
+        "tenWicketsMatch": "96",
+        "undefined": "37"
       },
       "T20I": {
         "matches": "28",
@@ -529,7 +405,7 @@
   },
   {
     "playerName": "Agar",
-    "battingCarrer": {
+    "bowlingCarrer": {
       "Test": {
         "matches": "4",
         "innings": "7",
@@ -576,7 +452,7 @@
         "Sixes": "5"
       }
     },
-    "bowlingCarrer": {
+    "battingCarrer": {
       "Test": {
         "matches": "4",
         "innings": "8",
@@ -703,30 +579,30 @@
       "ODI": {
         "matches": "60",
         "innings": "57",
-        "balls": "1949",
+        "notOut": "1949",
         "runs": "1803",
-        "wickets": "49",
-        "bestBowlingInInnings": "5/33",
-        "bestBowlingInMatch": "5/33",
-        "economy": "5.55",
-        "bowlingAverage": "36.8",
-        "bowlingStrikeRate": "39.78",
-        "fiveWicketsInning": "1",
-        "tenWicketsMatch": "0"
+        "highestScore": "49",
+        "average": "5/33",
+        "ballsPlayed": "5/33",
+        "strikeRate": "5.55",
+        "hundreds": "36.8",
+        "twoHundreds": "39.78",
+        "Fifties": "1",
+        "Fours": "0"
       },
       "T20I": {
         "matches": "20",
         "innings": "10",
-        "balls": "120",
+        "notOut": "120",
         "runs": "159",
-        "wickets": "7",
-        "bestBowlingInInnings": "2/6",
-        "bestBowlingInMatch": "2/6",
-        "economy": "7.95",
-        "bowlingAverage": "22.71",
-        "bowlingStrikeRate": "17.14",
-        "fiveWicketsInning": "0",
-        "tenWicketsMatch": "0"
+        "highestScore": "7",
+        "average": "2/6",
+        "ballsPlayed": "2/6",
+        "strikeRate": "7.95",
+        "hundreds": "22.71",
+        "twoHundreds": "17.14",
+        "Fifties": "0",
+        "Fours": "0"
       },
       "IPL": {
         "matches": "21",
@@ -797,30 +673,30 @@
       "Test": {
         "matches": "2",
         "innings": "4",
-        "balls": "306",
+        "notOut": "306",
         "runs": "123",
-        "wickets": "6",
-        "bestBowlingInInnings": "3/26",
-        "bestBowlingInMatch": "5/45",
-        "economy": "2.41",
-        "bowlingAverage": "20.5",
-        "bowlingStrikeRate": "51.0",
-        "fiveWicketsInning": "0",
-        "tenWicketsMatch": "0"
+        "highestScore": "6",
+        "average": "3/26",
+        "ballsPlayed": "5/45",
+        "strikeRate": "2.41",
+        "hundreds": "20.5",
+        "twoHundreds": "51.0",
+        "Fifties": "0",
+        "Fours": "0"
       },
       "ODI": {
         "matches": "13",
         "innings": "13",
-        "balls": "708",
+        "notOut": "708",
         "runs": "690",
-        "wickets": "24",
-        "bestBowlingInInnings": "4/26",
-        "bestBowlingInMatch": "4/26",
-        "economy": "5.85",
-        "bowlingAverage": "28.75",
-        "bowlingStrikeRate": "29.5",
-        "fiveWicketsInning": "0",
-        "tenWicketsMatch": "0"
+        "highestScore": "24",
+        "average": "4/26",
+        "ballsPlayed": "4/26",
+        "strikeRate": "5.85",
+        "hundreds": "28.75",
+        "twoHundreds": "29.5",
+        "Fifties": "0",
+        "Fours": "0"
       },
       "T20I": {
         "matches": "14",
@@ -840,53 +716,6 @@
   },
   {
     "playerName": "Kane Richardson",
-    "battingCarrer": {
-      "ODI": {
-        "matches": "25",
-        "innings": "12",
-        "notOut": "7",
-        "runs": "75",
-        "highestScore": "24",
-        "average": "15.0",
-        "ballsPlayed": "68",
-        "strikeRate": "110.29",
-        "hundreds": "0",
-        "twoHundreds": "0",
-        "Fifties": "0",
-        "Fours": "7",
-        "Sixes": "4"
-      },
-      "T20I": {
-        "matches": "26",
-        "innings": "5",
-        "notOut": "2",
-        "runs": "16",
-        "highestScore": "9",
-        "average": "5.33",
-        "ballsPlayed": "15",
-        "strikeRate": "106.67",
-        "hundreds": "0",
-        "twoHundreds": "0",
-        "Fifties": "0",
-        "Fours": "0",
-        "Sixes": "0"
-      },
-      "IPL": {
-        "matches": "14",
-        "innings": "4",
-        "notOut": "1",
-        "runs": "36",
-        "highestScore": "26",
-        "average": "12.0",
-        "ballsPlayed": "39",
-        "strikeRate": "92.31",
-        "hundreds": "0",
-        "twoHundreds": "0",
-        "Fifties": "0",
-        "Fours": "2",
-        "Sixes": "1"
-      }
-    },
     "bowlingCarrer": {
       "ODI": {
         "matches": "25",
@@ -934,7 +763,7 @@
   },
   {
     "playerName": "Southee",
-    "battingCarrer": {
+    "bowlingCarrer": {
       "Test": {
         "matches": "77",
         "innings": "108",
@@ -968,35 +797,35 @@
       "T20I": {
         "matches": "79",
         "innings": "35",
-        "notOut": "13",
+        "balls": "13",
         "runs": "249",
-        "highestScore": "39",
-        "average": "11.32",
-        "ballsPlayed": "174",
-        "strikeRate": "143.1",
-        "hundreds": "0",
-        "twoHundreds": "0",
-        "Fifties": "0",
-        "Fours": "16",
-        "Sixes": "16"
+        "wickets": "39",
+        "bestBowlingInInnings": "11.32",
+        "bestBowlingInMatch": "174",
+        "economy": "143.1",
+        "bowlingAverage": "0",
+        "bowlingStrikeRate": "0",
+        "fiveWicketsInning": "0",
+        "tenWicketsMatch": "16",
+        "undefined": "16"
       },
       "IPL": {
         "matches": "40",
         "innings": "14",
-        "notOut": "6",
+        "balls": "6",
         "runs": "115",
-        "highestScore": "36",
-        "average": "14.38",
-        "ballsPlayed": "90",
-        "strikeRate": "127.78",
-        "hundreds": "0",
-        "twoHundreds": "0",
-        "Fifties": "0",
-        "Fours": "8",
-        "Sixes": "4"
+        "wickets": "36",
+        "bestBowlingInInnings": "14.38",
+        "bestBowlingInMatch": "90",
+        "economy": "127.78",
+        "bowlingAverage": "0",
+        "bowlingStrikeRate": "0",
+        "fiveWicketsInning": "0",
+        "tenWicketsMatch": "8",
+        "undefined": "4"
       }
     },
-    "bowlingCarrer": {
+    "battingCarrer": {
       "Test": {
         "matches": "77",
         "innings": "144",
@@ -1014,111 +843,49 @@
       "ODI": {
         "matches": "143",
         "innings": "141",
-        "balls": "7195",
+        "notOut": "7195",
         "runs": "6557",
-        "wickets": "190",
-        "bestBowlingInInnings": "7/33",
-        "bestBowlingInMatch": "7/33",
-        "economy": "5.47",
-        "bowlingAverage": "34.51",
-        "bowlingStrikeRate": "37.87",
-        "fiveWicketsInning": "3",
-        "tenWicketsMatch": "0"
+        "highestScore": "190",
+        "average": "7/33",
+        "ballsPlayed": "7/33",
+        "strikeRate": "5.47",
+        "hundreds": "34.51",
+        "twoHundreds": "37.87",
+        "Fifties": "3",
+        "Fours": "0"
       },
       "T20I": {
         "matches": "79",
         "innings": "77",
-        "balls": "1698",
+        "notOut": "1698",
         "runs": "2387",
-        "wickets": "93",
-        "bestBowlingInInnings": "5/18",
-        "bestBowlingInMatch": "5/18",
-        "economy": "8.43",
-        "bowlingAverage": "25.67",
-        "bowlingStrikeRate": "18.26",
-        "fiveWicketsInning": "1",
-        "tenWicketsMatch": "0"
+        "highestScore": "93",
+        "average": "5/18",
+        "ballsPlayed": "5/18",
+        "strikeRate": "8.43",
+        "hundreds": "25.67",
+        "twoHundreds": "18.26",
+        "Fifties": "1",
+        "Fours": "0"
       },
       "IPL": {
         "matches": "40",
         "innings": "40",
-        "balls": "888",
+        "notOut": "888",
         "runs": "1293",
-        "wickets": "28",
-        "bestBowlingInInnings": "3/24",
-        "bestBowlingInMatch": "3/24",
-        "economy": "8.74",
-        "bowlingAverage": "46.18",
-        "bowlingStrikeRate": "31.71",
-        "fiveWicketsInning": "0",
-        "tenWicketsMatch": "0"
+        "highestScore": "28",
+        "average": "3/24",
+        "ballsPlayed": "3/24",
+        "strikeRate": "8.74",
+        "hundreds": "46.18",
+        "twoHundreds": "31.71",
+        "Fifties": "0",
+        "Fours": "0"
       }
     }
   },
   {
     "playerName": "Santner",
-    "battingCarrer": {
-      "Test": {
-        "matches": "23",
-        "innings": "31",
-        "notOut": "1",
-        "runs": "766",
-        "highestScore": "126",
-        "average": "25.53",
-        "ballsPlayed": "1797",
-        "strikeRate": "42.63",
-        "hundreds": "1",
-        "twoHundreds": "0",
-        "Fifties": "2",
-        "Fours": "90",
-        "Sixes": "18"
-      },
-      "ODI": {
-        "matches": "72",
-        "innings": "56",
-        "notOut": "22",
-        "runs": "924",
-        "highestScore": "67",
-        "average": "27.18",
-        "ballsPlayed": "1046",
-        "strikeRate": "88.34",
-        "hundreds": "0",
-        "twoHundreds": "0",
-        "Fifties": "2",
-        "Fours": "64",
-        "Sixes": "27"
-      },
-      "T20I": {
-        "matches": "52",
-        "innings": "37",
-        "notOut": "15",
-        "runs": "335",
-        "highestScore": "37",
-        "average": "15.23",
-        "ballsPlayed": "264",
-        "strikeRate": "126.89",
-        "hundreds": "0",
-        "twoHundreds": "0",
-        "Fifties": "0",
-        "Fours": "24",
-        "Sixes": "11"
-      },
-      "IPL": {
-        "matches": "6",
-        "innings": "2",
-        "notOut": "1",
-        "runs": "32",
-        "highestScore": "22",
-        "average": "32.0",
-        "ballsPlayed": "23",
-        "strikeRate": "139.13",
-        "hundreds": "0",
-        "twoHundreds": "0",
-        "Fifties": "0",
-        "Fours": "0",
-        "Sixes": "3"
-      }
-    },
     "bowlingCarrer": {
       "Test": {
         "matches": "23",
@@ -1184,17 +951,17 @@
       "Test": {
         "matches": "71",
         "innings": "84",
-        "notOut": "40",
+        "balls": "40",
         "runs": "668",
-        "highestScore": "52",
-        "average": "15.18",
-        "ballsPlayed": "1169",
-        "strikeRate": "57.14",
-        "hundreds": "0",
-        "twoHundreds": "0",
-        "Fifties": "1",
-        "Fours": "64",
-        "Sixes": "30"
+        "wickets": "52",
+        "bestBowlingInInnings": "15.18",
+        "bestBowlingInMatch": "1169",
+        "economy": "57.14",
+        "bowlingAverage": "0",
+        "bowlingStrikeRate": "0",
+        "fiveWicketsInning": "1",
+        "tenWicketsMatch": "64",
+        "undefined": "30"
       },
       "ODI": {
         "matches": "90",
@@ -1303,38 +1070,6 @@
   },
   {
     "playerName": "Chapman",
-    "battingCarrer": {
-      "ODI": {
-        "matches": "6",
-        "innings": "6",
-        "notOut": "1",
-        "runs": "161",
-        "highestScore": "124",
-        "average": "32.2",
-        "ballsPlayed": "176",
-        "strikeRate": "91.48",
-        "hundreds": "1",
-        "twoHundreds": "0",
-        "Fifties": "0",
-        "Fours": "12",
-        "Sixes": "3"
-      },
-      "T20I": {
-        "matches": "27",
-        "innings": "26",
-        "notOut": "3",
-        "runs": "528",
-        "highestScore": "63",
-        "average": "22.96",
-        "ballsPlayed": "448",
-        "strikeRate": "117.86",
-        "hundreds": "0",
-        "twoHundreds": "0",
-        "Fifties": "1",
-        "Fours": "43",
-        "Sixes": "15"
-      }
-    },
     "bowlingCarrer": {
       "ODI": {
         "matches": "6",
@@ -1448,44 +1183,44 @@
       "ODI": {
         "matches": "33",
         "innings": "32",
-        "balls": "1620",
+        "notOut": "1620",
         "runs": "1508",
-        "wickets": "43",
-        "bestBowlingInInnings": "4/58",
-        "bestBowlingInMatch": "4/58",
-        "economy": "5.59",
-        "bowlingAverage": "35.07",
-        "bowlingStrikeRate": "37.67",
-        "fiveWicketsInning": "0",
-        "tenWicketsMatch": "0"
+        "highestScore": "43",
+        "average": "4/58",
+        "ballsPlayed": "4/58",
+        "strikeRate": "5.59",
+        "hundreds": "35.07",
+        "twoHundreds": "37.67",
+        "Fifties": "0",
+        "Fours": "0"
       },
       "T20I": {
         "matches": "55",
         "innings": "53",
-        "balls": "1137",
+        "notOut": "1137",
         "runs": "1524",
-        "wickets": "69",
-        "bestBowlingInInnings": "4/28",
-        "bestBowlingInMatch": "4/28",
-        "economy": "8.04",
-        "bowlingAverage": "22.09",
-        "bowlingStrikeRate": "16.48",
-        "fiveWicketsInning": "0",
-        "tenWicketsMatch": "0"
+        "highestScore": "69",
+        "average": "4/28",
+        "ballsPlayed": "4/28",
+        "strikeRate": "8.04",
+        "hundreds": "22.09",
+        "twoHundreds": "16.48",
+        "Fifties": "0",
+        "Fours": "0"
       },
       "IPL": {
         "matches": "8",
         "innings": "8",
-        "balls": "181",
+        "notOut": "181",
         "runs": "202",
-        "wickets": "9",
-        "bestBowlingInInnings": "3/26",
-        "bestBowlingInMatch": "3/26",
-        "economy": "6.7",
-        "bowlingAverage": "22.44",
-        "bowlingStrikeRate": "20.11",
-        "fiveWicketsInning": "0",
-        "tenWicketsMatch": "0"
+        "highestScore": "9",
+        "average": "3/26",
+        "ballsPlayed": "3/26",
+        "strikeRate": "6.7",
+        "hundreds": "22.44",
+        "twoHundreds": "20.11",
+        "Fifties": "0",
+        "Fours": "0"
       }
     }
   },
