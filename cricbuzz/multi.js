@@ -17,10 +17,10 @@ async function getCareerData(url, i, totalPlayers) {
         await browser.get(url);
         await browser.wait(wd.until.elementLocated(wd.By.css("table")));
         let tables = await browser.findElements(wd.By.css("table"));
-        for(j in tables) {
+        for(let j in tables) {
             let data = {};
             let rows = await tables[j].findElements(wd.By.css("tbody tr"));
-            for(row of rows) {
+            for(let row of rows) {
                 let tempData = {};
                 let columns = await row.findElements(wd.By.css("td"));
                 let matchType = await columns[0].getAttribute("innerText");
@@ -36,6 +36,7 @@ async function getCareerData(url, i, totalPlayers) {
                 }
                 data[matchType] = tempData;
             }
+            console.log(j);
             if(j == 0) {
                 carrerData[i]["battingCarrer"] = data;
             } else {
@@ -43,7 +44,7 @@ async function getCareerData(url, i, totalPlayers) {
             }
 
         }
-        browser.close();
+        await browser.close();
         playersAdded += 1;
         if(playersAdded == totalPlayers) {
             fs.writeFileSync("career.json", JSON.stringify(carrerData));
@@ -80,7 +81,7 @@ async function main() {
     }
 
     let finalUrls = inningsBatsmen.concat(inningsBowler);
-    for(i in finalUrls) {
+    for(let i in finalUrls) {
         getCareerData(finalUrls[i], i, finalUrls.length);
     }
     browser.close();
