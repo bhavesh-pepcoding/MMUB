@@ -1,1 +1,877 @@
-[{"topicUrl":"https://github.com/topics/c"},{"topicUrl":"https://github.com/topics/scikit-learn"},{"topicUrl":"https://github.com/topics/chrome-extension"}]
+[
+  {
+    "topicUrl": "https://github.com/topics/cpp",
+    "projects": [
+      {
+        "projectUrl": "https://github.com/CyC2018/CS-Notes",
+        "issues": [
+          {
+            "heading": "Leetcode刷题，双指针：88 Merge Sorted Array可以优化。",
+            "url": "https://github.com/CyC2018/CS-Notes/issues/1060"
+          },
+          {
+            "heading": "关于数据库系统原理中Readview的疑惑",
+            "url": "https://github.com/CyC2018/CS-Notes/issues/1059"
+          },
+          {
+            "heading": "代码可读性 中关于 Javascript var声明的描述有误",
+            "url": "https://github.com/CyC2018/CS-Notes/issues/1058"
+          },
+          {
+            "heading": "请问标题提到的C++部分在项目的哪里，没看到。。",
+            "url": "https://github.com/CyC2018/CS-Notes/issues/1057"
+          },
+          {
+            "heading": "Hashmap扩容重新计算桶下标算式有误",
+            "url": "https://github.com/CyC2018/CS-Notes/issues/1056"
+          },
+          {
+            "heading": "适配器模式的图是错的",
+            "url": "https://github.com/CyC2018/CS-Notes/issues/1053"
+          },
+          {
+            "heading": "HTTP",
+            "url": "https://github.com/CyC2018/CS-Notes/issues/1051"
+          },
+          {
+            "heading": "Java框架",
+            "url": "https://github.com/CyC2018/CS-Notes/issues/1048"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/tuvtran/project-based-learning",
+        "issues": [
+          {
+            "heading": "Create a CRUD application with MVC framework",
+            "url": "https://github.com/tuvtran/project-based-learning/issues/287"
+          },
+          {
+            "heading": "IN the Python Tuts Under the web apps section \"create a blog web app\" Part 2 Seems to either be broken or the source is no longer available.",
+            "url": "https://github.com/tuvtran/project-based-learning/issues/285"
+          },
+          {
+            "heading": "Add Flutter tutorials",
+            "url": "https://github.com/tuvtran/project-based-learning/issues/282"
+          },
+          {
+            "heading": "Broken/Expired link : Create a Character Voting App with React, Node, MongoDB and SocketIO",
+            "url": "https://github.com/tuvtran/project-based-learning/issues/276"
+          },
+          {
+            "heading": "Learn",
+            "url": "https://github.com/tuvtran/project-based-learning/issues/274"
+          },
+          {
+            "heading": "Go blockchain tutorial redirects to porn website",
+            "url": "https://github.com/tuvtran/project-based-learning/issues/273"
+          },
+          {
+            "heading": "Add dropdowns to the list",
+            "url": "https://github.com/tuvtran/project-based-learning/issues/259"
+          },
+          {
+            "heading": "Arlfo",
+            "url": "https://github.com/tuvtran/project-based-learning/issues/251"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/azl397985856/leetcode",
+        "issues": [
+          {
+            "heading": "Java Code Error in \"堆排序(上)\"",
+            "url": "https://github.com/azl397985856/leetcode/issues/481"
+          },
+          {
+            "heading": "关于leetcode 206.reverse-linked-list中python脚本的multi assignments",
+            "url": "https://github.com/azl397985856/leetcode/issues/480"
+          },
+          {
+            "heading": "【每日一题】- 2021-01-22 - 最少的砝码",
+            "url": "https://github.com/azl397985856/leetcode/issues/478"
+          },
+          {
+            "heading": "【刷题小助手】贡献公司标签（面试遇到leetcode原题或类似题），成为开源项目的贡献者😘",
+            "url": "https://github.com/azl397985856/leetcode/issues/382"
+          },
+          {
+            "heading": "力扣加加题解要求",
+            "url": "https://github.com/azl397985856/leetcode/issues/369"
+          },
+          {
+            "heading": "【每日一题】- 2020-01-06 - 1131. 绝对值表达式的最大值",
+            "url": "https://github.com/azl397985856/leetcode/issues/263"
+          },
+          {
+            "heading": "1168. optimize water distribution in a village python解法超出时间限制",
+            "url": "https://github.com/azl397985856/leetcode/issues/219"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/x64dbg/x64dbg",
+        "issues": [
+          {
+            "heading": "cmd-debug-control.cpp GetPeArch",
+            "url": "https://github.com/x64dbg/x64dbg/issues/2612"
+          },
+          {
+            "heading": "Copy registers in trace view",
+            "url": "https://github.com/x64dbg/x64dbg/issues/2609"
+          },
+          {
+            "heading": "List certain NVIDIA DLLs as system DLL",
+            "url": "https://github.com/x64dbg/x64dbg/issues/2608"
+          },
+          {
+            "heading": "BSOD after the step on popad and popfd",
+            "url": "https://github.com/x64dbg/x64dbg/issues/2603"
+          },
+          {
+            "heading": "Wrong ASCII strings are detected",
+            "url": "https://github.com/x64dbg/x64dbg/issues/2602"
+          },
+          {
+            "heading": "Bad ZIP 02-15",
+            "url": "https://github.com/x64dbg/x64dbg/issues/2601"
+          },
+          {
+            "heading": "Settings revert to defaults after saving",
+            "url": "https://github.com/x64dbg/x64dbg/issues/2600"
+          },
+          {
+            "heading": "How to attach to a preview viewer (.dll)?",
+            "url": "https://github.com/x64dbg/x64dbg/issues/2599"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/fffaraz/awesome-cpp",
+        "issues": [
+          {
+            "heading": "Add cpp-stub library",
+            "url": "https://github.com/fffaraz/awesome-cpp/issues/1064"
+          },
+          {
+            "heading": "Add booleval library",
+            "url": "https://github.com/fffaraz/awesome-cpp/issues/1062"
+          },
+          {
+            "heading": "Add bitflags library",
+            "url": "https://github.com/fffaraz/awesome-cpp/issues/1061"
+          },
+          {
+            "heading": "PlatformLab/NanoLog",
+            "url": "https://github.com/fffaraz/awesome-cpp/issues/1056"
+          },
+          {
+            "heading": "Typo in the entry \"cpp-httplib\"",
+            "url": "https://github.com/fffaraz/awesome-cpp/issues/1054"
+          },
+          {
+            "heading": "Add p-ranav to the \"awsome list\"",
+            "url": "https://github.com/fffaraz/awesome-cpp/issues/1053"
+          },
+          {
+            "heading": "OpenImageDenoise/oidn",
+            "url": "https://github.com/fffaraz/awesome-cpp/issues/1036"
+          },
+          {
+            "heading": "alandefreitas/matplotplusplus",
+            "url": "https://github.com/fffaraz/awesome-cpp/issues/1035"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/microsoft/calculator",
+        "issues": [
+          {
+            "heading": "Show Y value at specifc X value in Graphing Calculator",
+            "url": "https://github.com/microsoft/calculator/issues/1509"
+          },
+          {
+            "heading": "Confusing angle \"approximately equal\" ",
+            "url": "https://github.com/microsoft/calculator/issues/1508"
+          },
+          {
+            "heading": "Calculator in Standard wont won't keep a multiline entry ex previously 1+1+1=3 now it shows 1+1=2, 2+1=3 despite being entered as 1+1+1=",
+            "url": "https://github.com/microsoft/calculator/issues/1507"
+          },
+          {
+            "heading": "Endian Selection In [Programmer Mode]",
+            "url": "https://github.com/microsoft/calculator/issues/1506"
+          },
+          {
+            "heading": "Pressing enter does not calculate after I click on \"2nd\"",
+            "url": "https://github.com/microsoft/calculator/issues/1503"
+          },
+          {
+            "heading": "The function analisis shows incorrect horizontal asymptote",
+            "url": "https://github.com/microsoft/calculator/issues/1502"
+          },
+          {
+            "heading": "2021 Roadmap Update",
+            "url": "https://github.com/microsoft/calculator/issues/1501"
+          },
+          {
+            "heading": "Add \"Keep on Top\" mode for all other modes on the calculator",
+            "url": "https://github.com/microsoft/calculator/issues/1500"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/CMU-Perceptual-Computing-Lab/openpose",
+        "issues": [
+          {
+            "heading": "[Mac] Demo does not run - \"Attempt to free invalid pointer\"",
+            "url": "https://github.com/CMU-Perceptual-Computing-Lab/openpose/issues/1892"
+          },
+          {
+            "heading": "How to visualize already obtained predictions (Help wanted)",
+            "url": "https://github.com/CMU-Perceptual-Computing-Lab/openpose/issues/1891"
+          },
+          {
+            "heading": "opWrapper.start() not executed in c++ project",
+            "url": "https://github.com/CMU-Perceptual-Computing-Lab/openpose/issues/1889"
+          },
+          {
+            "heading": "Windows 10 F0308 17:39:34.926373 15568 common.cpp:161] Check failed: error == cudaSuccess (3 vs. 0) initialization error",
+            "url": "https://github.com/CMU-Perceptual-Computing-Lab/openpose/issues/1888"
+          },
+          {
+            "heading": "Inverse kinematics for missing key points?",
+            "url": "https://github.com/CMU-Perceptual-Computing-Lab/openpose/issues/1887"
+          },
+          {
+            "heading": "Visual Studio 2019 v16.9 Issue",
+            "url": "https://github.com/CMU-Perceptual-Computing-Lab/openpose/issues/1886"
+          },
+          {
+            "heading": "Keypoint Question: What is the referent point (x,y)? Is it the upper left?",
+            "url": "https://github.com/CMU-Perceptual-Computing-Lab/openpose/issues/1885"
+          },
+          {
+            "heading": "Flags Utility",
+            "url": "https://github.com/CMU-Perceptual-Computing-Lab/openpose/issues/1884"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/huihut/interview",
+        "issues": [
+          {
+            "heading": "线程安全",
+            "url": "https://github.com/huihut/interview/issues/67"
+          },
+          {
+            "heading": "[讨论] 本仓库的建议、讨论等方面",
+            "url": "https://github.com/huihut/interview/issues/12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "topicUrl": "https://github.com/topics/graphql",
+    "projects": [
+      {
+        "projectUrl": "https://github.com/gatsbyjs/gatsby",
+        "issues": [
+          {
+            "heading": "Gatsby 3 build does not include or execute javascript",
+            "url": "https://github.com/gatsbyjs/gatsby/issues/30238"
+          },
+          {
+            "heading": "Gatsby tutorial part 3 is broken — Could not resolve dependency: peer react@\"^0.14.0 || ^15.0.0 || ^16.0.0\" from react-typography@0.16.19",
+            "url": "https://github.com/gatsbyjs/gatsby/issues/30235"
+          },
+          {
+            "heading": "read ECONNRESET Yoga-layout-prebuilt + fast reload not working",
+            "url": "https://github.com/gatsbyjs/gatsby/issues/30227"
+          },
+          {
+            "heading": "WordPress Starter Blog Lists Wrong Starter Name in Readme",
+            "url": "https://github.com/gatsbyjs/gatsby/issues/30208"
+          },
+          {
+            "heading": "[gatsby-source-wordpress] Previews break after making a menu item change following a content preview",
+            "url": "https://github.com/gatsbyjs/gatsby/issues/30203"
+          },
+          {
+            "heading": "Build is not incremental",
+            "url": "https://github.com/gatsbyjs/gatsby/issues/30202"
+          },
+          {
+            "heading": "Error: Schema must contain uniquely named types but contains multiple types named \"GRVSCStylesheet\"",
+            "url": "https://github.com/gatsbyjs/gatsby/issues/30199"
+          },
+          {
+            "heading": "gatsby-plugin-preact@5 HMR not working",
+            "url": "https://github.com/gatsbyjs/gatsby/issues/30190"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/prettier/prettier",
+        "issues": [
+          {
+            "heading": "YAML: a comment after an anchor doesn't stay on a separate line",
+            "url": "https://github.com/prettier/prettier/issues/10518"
+          },
+          {
+            "heading": "Avoid last-argument-hugging for number-only arrays",
+            "url": "https://github.com/prettier/prettier/issues/10515"
+          },
+          {
+            "heading": "YAML: Node Anchor followed by a blank line: \"Nested mappings are not allowed in compact mappings\"",
+            "url": "https://github.com/prettier/prettier/issues/10510"
+          },
+          {
+            "heading": "markdown: lists with non-default indent size increases padding between list syntax and value",
+            "url": "https://github.com/prettier/prettier/issues/10508"
+          },
+          {
+            "heading": "parse error on mdx code block in markdown",
+            "url": "https://github.com/prettier/prettier/issues/10507"
+          },
+          {
+            "heading": "[CSS] Bad formatting of a long list of arguments",
+            "url": "https://github.com/prettier/prettier/issues/10486"
+          },
+          {
+            "heading": "idea: more exit codes.",
+            "url": "https://github.com/prettier/prettier/issues/10467"
+          },
+          {
+            "heading": "Formatting issue when using a function called 'define' (no AMD/RequireJS)",
+            "url": "https://github.com/prettier/prettier/issues/10422"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/strapi/strapi",
+        "issues": [
+          {
+            "heading": "Private field setting of related content type resets",
+            "url": "https://github.com/strapi/strapi/issues/9712"
+          },
+          {
+            "heading": "Accessing non-existent property 'MongoError' of module exports inside circular dependency",
+            "url": "https://github.com/strapi/strapi/issues/9711"
+          },
+          {
+            "heading": "Filter doesn't work the way you would it expect to work for empty values",
+            "url": "https://github.com/strapi/strapi/issues/9709"
+          },
+          {
+            "heading": "Disable Draft&Publish by default or add ability to control default state of it",
+            "url": "https://github.com/strapi/strapi/issues/9707"
+          },
+          {
+            "heading": "Strapi Unique field is not working with MongoDB",
+            "url": "https://github.com/strapi/strapi/issues/9704"
+          },
+          {
+            "heading": "Unable to upload file to media assets from UI",
+            "url": "https://github.com/strapi/strapi/issues/9701"
+          },
+          {
+            "heading": "Not able to update media with multipart",
+            "url": "https://github.com/strapi/strapi/issues/9699"
+          },
+          {
+            "heading": "Video dimensions for video upload",
+            "url": "https://github.com/strapi/strapi/issues/9677"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/hoppscotch/hoppscotch",
+        "issues": [
+          {
+            "heading": "Improve save request flow",
+            "url": "https://github.com/hoppscotch/hoppscotch/issues/1525"
+          },
+          {
+            "heading": "Apply syntax highlighting on generated code",
+            "url": "https://github.com/hoppscotch/hoppscotch/issues/1507"
+          },
+          {
+            "heading": "Address bar URL params do not update as expected",
+            "url": "https://github.com/hoppscotch/hoppscotch/issues/1497"
+          },
+          {
+            "heading": "Provide a visual editor for JSON/KV request bodies",
+            "url": "https://github.com/hoppscotch/hoppscotch/issues/1435"
+          },
+          {
+            "heading": "Support for Cookies",
+            "url": "https://github.com/hoppscotch/hoppscotch/issues/1383"
+          },
+          {
+            "heading": "Better error message for first-time-users: No 'Access-Control-Allow-Origin' header is present ",
+            "url": "https://github.com/hoppscotch/hoppscotch/issues/1376"
+          },
+          {
+            "heading": "Add session persistence to realtime tabs",
+            "url": "https://github.com/hoppscotch/hoppscotch/issues/1196"
+          },
+          {
+            "heading": "🚧 Roadmap",
+            "url": "https://github.com/hoppscotch/hoppscotch/issues/1166"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/hasura/graphql-engine",
+        "issues": [
+          {
+            "heading": "Why can't custom functions receive session arguments with GraphQL subscription in console?",
+            "url": "https://github.com/hasura/graphql-engine/issues/6657"
+          },
+          {
+            "heading": "Cannot pass object variables inside a GraphQL stitched mutation",
+            "url": "https://github.com/hasura/graphql-engine/issues/6656"
+          },
+          {
+            "heading": "[2.0.0-alpha.3] Remote Schema Argument Type Issue: Expecting Array but is Object",
+            "url": "https://github.com/hasura/graphql-engine/issues/6655"
+          },
+          {
+            "heading": "Hasura pass `x-request-id` to action",
+            "url": "https://github.com/hasura/graphql-engine/issues/6654"
+          },
+          {
+            "heading": "Hasura + AWS Cognito integration with `authorization code` instead of `implicit grant` flow",
+            "url": "https://github.com/hasura/graphql-engine/issues/6653"
+          },
+          {
+            "heading": "Not able to perform Hasura migrate apply",
+            "url": "https://github.com/hasura/graphql-engine/issues/6652"
+          },
+          {
+            "heading": "Type Issue: Expected an Object for Type but found List",
+            "url": "https://github.com/hasura/graphql-engine/issues/6651"
+          },
+          {
+            "heading": "Not clear constraint error",
+            "url": "https://github.com/hasura/graphql-engine/issues/6649"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/kriasoft/react-starter-kit",
+        "issues": [
+          {
+            "heading": "Unable to add Google Analytics Tracking",
+            "url": "https://github.com/kriasoft/react-starter-kit/issues/1925"
+          },
+          {
+            "heading": "You are missing the split code",
+            "url": "https://github.com/kriasoft/react-starter-kit/issues/1924"
+          },
+          {
+            "heading": "Unable to Load Images in React",
+            "url": "https://github.com/kriasoft/react-starter-kit/issues/1920"
+          },
+          {
+            "heading": "Question on routing",
+            "url": "https://github.com/kriasoft/react-starter-kit/issues/1919"
+          },
+          {
+            "heading": "React",
+            "url": "https://github.com/kriasoft/react-starter-kit/issues/1917"
+          },
+          {
+            "heading": "Unable to resolve path to module 'buefy'",
+            "url": "https://github.com/kriasoft/react-starter-kit/issues/1916"
+          },
+          {
+            "heading": "Forcing a component to re-render",
+            "url": "https://github.com/kriasoft/react-starter-kit/issues/1915"
+          },
+          {
+            "heading": "Embedding a component in an existing web application",
+            "url": "https://github.com/kriasoft/react-starter-kit/issues/1914"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/tannerlinsley/react-query",
+        "issues": [
+          {
+            "heading": "prefetchQuery should be generic",
+            "url": "https://github.com/tannerlinsley/react-query/issues/1956"
+          },
+          {
+            "heading": "Persisted cache is not immediately cleared by `resetQueries`",
+            "url": "https://github.com/tannerlinsley/react-query/issues/1951"
+          },
+          {
+            "heading": "useInfiniteQuery does not keep previous data on new fetching",
+            "url": "https://github.com/tannerlinsley/react-query/issues/1945"
+          },
+          {
+            "heading": "ReactQueryDevtools warning in console: \"Warning: a promise was created in a handler at webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:15660:5 but was not returned from it\"",
+            "url": "https://github.com/tannerlinsley/react-query/issues/1944"
+          },
+          {
+            "heading": "\"No QueryClient set\" when upgrading from 3.12.0 to 3.12.1",
+            "url": "https://github.com/tannerlinsley/react-query/issues/1936"
+          },
+          {
+            "heading": "Query is refetched after cache invalidation despite `refetchActive: false`",
+            "url": "https://github.com/tannerlinsley/react-query/issues/1931"
+          },
+          {
+            "heading": "About Infinite Queries and useInfiniteQuery hook",
+            "url": "https://github.com/tannerlinsley/react-query/issues/1930"
+          },
+          {
+            "heading": "local onError is not working as expected when using global onError on MutationCache",
+            "url": "https://github.com/tannerlinsley/react-query/issues/1927"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/parse-community/parse-server",
+        "issues": [
+          {
+            "heading": "Add no-empty to lint rules",
+            "url": "https://github.com/parse-community/parse-server/issues/7260"
+          },
+          {
+            "heading": "insert items into array using graphql",
+            "url": "https://github.com/parse-community/parse-server/issues/7256"
+          },
+          {
+            "heading": "Sessiontoken renewal",
+            "url": "https://github.com/parse-community/parse-server/issues/7248"
+          },
+          {
+            "heading": "Select and Exclude queries do not properly digest JSON arrays",
+            "url": "https://github.com/parse-community/parse-server/issues/7245"
+          },
+          {
+            "heading": "ProtectedFields not properly used in beforeSave trigger",
+            "url": "https://github.com/parse-community/parse-server/issues/7244"
+          },
+          {
+            "heading": "Parse.Cloud.httprequest fails to delete file with S3 adapter",
+            "url": "https://github.com/parse-community/parse-server/issues/7232"
+          },
+          {
+            "heading": "RFC: Save Triggers should be able to filter Operations",
+            "url": "https://github.com/parse-community/parse-server/issues/7220"
+          },
+          {
+            "heading": "Add password reset initiated via web form",
+            "url": "https://github.com/parse-community/parse-server/issues/7210"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "topicUrl": "https://github.com/topics/kubernetes",
+    "projects": [
+      {
+        "projectUrl": "https://github.com/kubernetes/kubernetes",
+        "issues": [
+          {
+            "heading": "[Flaky Test] [sig-network] HostPort validates that there is no conflict between pods with same hostPort but different hostIP and protocol [LinuxOnly] [Conformance]",
+            "url": "https://github.com/kubernetes/kubernetes/issues/100220"
+          },
+          {
+            "heading": "WaitForAttachAndMount might delay pod terminating.",
+            "url": "https://github.com/kubernetes/kubernetes/issues/100219"
+          },
+          {
+            "heading": "Network Policy accepts 2 cidrs in one ipBlock",
+            "url": "https://github.com/kubernetes/kubernetes/issues/100213"
+          },
+          {
+            "heading": "Kubernetes blocking UDP requests",
+            "url": "https://github.com/kubernetes/kubernetes/issues/100212"
+          },
+          {
+            "heading": "To podresource API, GetPodResources function return the cpu list in share pool for the Burstable QoS pod and so on",
+            "url": "https://github.com/kubernetes/kubernetes/issues/100211"
+          },
+          {
+            "heading": "exec probes that exceed timeout always succeed when using ExecProbeTimeout=false",
+            "url": "https://github.com/kubernetes/kubernetes/issues/100198"
+          },
+          {
+            "heading": "namespace update fails in AdmissionWebhook e2e tests",
+            "url": "https://github.com/kubernetes/kubernetes/issues/100197"
+          },
+          {
+            "heading": "[Flaky Test] [sig-storage] Subpath Container restart should verify that container can restart successfully after configmaps modified",
+            "url": "https://github.com/kubernetes/kubernetes/issues/100194"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/netdata/netdata",
+        "issues": [
+          {
+            "heading": "Docker container becomes inaccessible when using \"network_mode:\" via VPN container",
+            "url": "https://github.com/netdata/netdata/issues/10764"
+          },
+          {
+            "heading": "Netdata monitoring Pihole causes a lot of log lines in pihole.log",
+            "url": "https://github.com/netdata/netdata/issues/10763"
+          },
+          {
+            "heading": "`send charts only` does not effectively filter metrics using graphite backend",
+            "url": "https://github.com/netdata/netdata/issues/10762"
+          },
+          {
+            "heading": "Installing fails on Amazon Linux 2 when --enable-backend-prometheus-remote-write",
+            "url": "https://github.com/netdata/netdata/issues/10755"
+          },
+          {
+            "heading": "Zookeeper restart brake the netada plugin",
+            "url": "https://github.com/netdata/netdata/issues/10753"
+          },
+          {
+            "heading": "Agent MQTT Connections timeout due to KA not received (Production)",
+            "url": "https://github.com/netdata/netdata/issues/10750"
+          },
+          {
+            "heading": "Fails to execute on Raspberry Pi 4B",
+            "url": "https://github.com/netdata/netdata/issues/10748"
+          },
+          {
+            "heading": "NG per cloud request charts",
+            "url": "https://github.com/netdata/netdata/issues/10747"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/etcd-io/etcd",
+        "issues": [
+          {
+            "heading": "Ensure that generated documentation gets merged into website automatically",
+            "url": "https://github.com/etcd-io/etcd/issues/12768"
+          },
+          {
+            "heading": "Release-3.2 Maintainership",
+            "url": "https://github.com/etcd-io/etcd/issues/12767"
+          },
+          {
+            "heading": "etcd core",
+            "url": "https://github.com/etcd-io/etcd/issues/12761"
+          },
+          {
+            "heading": "with multiple endpoints, go-client should close the connection more gracefully.",
+            "url": "https://github.com/etcd-io/etcd/issues/12760"
+          },
+          {
+            "heading": "While using etcd with patroni, Patroni unable to reach etcd",
+            "url": "https://github.com/etcd-io/etcd/issues/12758"
+          },
+          {
+            "heading": "[v3.4.14] etcdctl make-mirror does not reognize dest-user option",
+            "url": "https://github.com/etcd-io/etcd/issues/12746"
+          },
+          {
+            "heading": "etcd can not start because of unreachable member",
+            "url": "https://github.com/etcd-io/etcd/issues/12738"
+          },
+          {
+            "heading": "[v3.4.15] Release Archive Mismatch with SHA256SUMS, Raw `.tar` Uploaded without GZIP",
+            "url": "https://github.com/etcd-io/etcd/issues/12734"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/traefik/traefik",
+        "issues": [
+          {
+            "heading": "accessLog won't filter",
+            "url": "https://github.com/traefik/traefik/issues/7982"
+          },
+          {
+            "heading": "Publish IPs from ClusterIP and NodePort services on Ingresses",
+            "url": "https://github.com/traefik/traefik/issues/7972"
+          },
+          {
+            "heading": "Possible memory leak in Traefik 2 as k8s ingress controller",
+            "url": "https://github.com/traefik/traefik/issues/7964"
+          },
+          {
+            "heading": "Update go.elastic.co/apm to 1.11.0",
+            "url": "https://github.com/traefik/traefik/issues/7954"
+          },
+          {
+            "heading": "Upstream golang HTTP2 bug hangs chromium-based browsers",
+            "url": "https://github.com/traefik/traefik/issues/7953"
+          },
+          {
+            "heading": "Add OrganizationalUnitName (OU) to passtlscert middleware",
+            "url": "https://github.com/traefik/traefik/issues/7951"
+          },
+          {
+            "heading": "ACME: preferredChain option seems to be ignored",
+            "url": "https://github.com/traefik/traefik/issues/7936"
+          },
+          {
+            "heading": "Add EndUTC to Access Log Fields",
+            "url": "https://github.com/traefik/traefik/issues/7934"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/Kong/kong",
+        "issues": [
+          {
+            "heading": "Kong 2.3.2 CLI commands seem to be wiping my custom generated nginx.conf file with a Kong default.",
+            "url": "https://github.com/Kong/kong/issues/6917"
+          },
+          {
+            "heading": "double access_log entries when using KONG_NGINX_PROXY_ACCESS_LOG variable",
+            "url": "https://github.com/Kong/kong/issues/6915"
+          },
+          {
+            "heading": "Global override for timeouts",
+            "url": "https://github.com/Kong/kong/issues/6913"
+          },
+          {
+            "heading": "upstream load balancer weight=0 is not accepted",
+            "url": "https://github.com/Kong/kong/issues/6910"
+          },
+          {
+            "heading": "PostgreSQL error failed to retrieve PostgreSQL server_version_num: tlsv1 alert protocol version",
+            "url": "https://github.com/Kong/kong/issues/6906"
+          },
+          {
+            "heading": "nginx worker stuck on shutdown after reload",
+            "url": "https://github.com/Kong/kong/issues/6904"
+          },
+          {
+            "heading": "Compiling kong 2.3.2 bases on luarocks 3.4.0, the result is failed",
+            "url": "https://github.com/Kong/kong/issues/6903"
+          },
+          {
+            "heading": "Create many tmp dir and nginx.conf file ?",
+            "url": "https://github.com/Kong/kong/issues/6898"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/istio/istio",
+        "issues": [
+          {
+            "heading": "Workload evidence when using RBAC policy",
+            "url": "https://github.com/istio/istio/issues/31452"
+          },
+          {
+            "heading": "istiod:2021-03-13T05:22:55.376108Z info validationController Reconcile(enter): retry dry-run creation of invalid config 2021-03-13T05:22:55.403467Z info validationController Not ready to switch validation to fail-closed: dummy invalid config not rejected 2021-03-13T05:22:55.404014Z info validationController validatingwebhookconfiguration istiod-istio-system (failurePolicy=Ignore, resourceVersion=2269995) is up-to-date. No change required.",
+            "url": "https://github.com/istio/istio/issues/31451"
+          },
+          {
+            "heading": "1.8.1: istioctl ps the registered virtual machine version is incorrect",
+            "url": "https://github.com/istio/istio/issues/31450"
+          },
+          {
+            "heading": "Envoy cluster upstream extension for BTS",
+            "url": "https://github.com/istio/istio/issues/31444"
+          },
+          {
+            "heading": "Authenticating & authorizing access to GKE services using Istio",
+            "url": "https://github.com/istio/istio/issues/31443"
+          },
+          {
+            "heading": "\"istioctl install\" complains if master installed",
+            "url": "https://github.com/istio/istio/issues/31440"
+          },
+          {
+            "heading": "Inconsistent application of RequestAuthentication",
+            "url": "https://github.com/istio/istio/issues/31439"
+          },
+          {
+            "heading": "istio/tools: package golang.org/x/tools/go/loader is deprecated",
+            "url": "https://github.com/istio/istio/issues/31436"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/dokku/dokku",
+        "issues": [
+          {
+            "heading": "Upgrade Vector image for log shipping to 0.12.x",
+            "url": "https://github.com/dokku/dokku/issues/4480"
+          },
+          {
+            "heading": "Document UID/GID for CNB-based directory mounting",
+            "url": "https://github.com/dokku/dokku/issues/4479"
+          },
+          {
+            "heading": "Clarify log_format documentation",
+            "url": "https://github.com/dokku/dokku/issues/4478"
+          },
+          {
+            "heading": "Add ability to set initial network via network:set",
+            "url": "https://github.com/dokku/dokku/issues/4477"
+          },
+          {
+            "heading": "Migrate from bootsrap.sh dokku to docker based dokku.",
+            "url": "https://github.com/dokku/dokku/issues/4474"
+          },
+          {
+            "heading": "Not able to build an application using an Dockerfile with multiple --build-arg",
+            "url": "https://github.com/dokku/dokku/issues/4472"
+          },
+          {
+            "heading": "Access the docker deploy source of an application",
+            "url": "https://github.com/dokku/dokku/issues/4464"
+          },
+          {
+            "heading": "certs to include paths .pem",
+            "url": "https://github.com/dokku/dokku/issues/4459"
+          }
+        ]
+      },
+      {
+        "projectUrl": "https://github.com/kubernetes/minikube",
+        "issues": [
+          {
+            "heading": "whilw start minikube on windows 10 i am getting below error could you please help me for a solution",
+            "url": "https://github.com/kubernetes/minikube/issues/10815"
+          },
+          {
+            "heading": "potential nil pointer dereference error",
+            "url": "https://github.com/kubernetes/minikube/issues/10813"
+          },
+          {
+            "heading": "Reaching running application in minikube at 'localhost' on Linux",
+            "url": "https://github.com/kubernetes/minikube/issues/10812"
+          },
+          {
+            "heading": "minikube stop commands exits with message \"GUEST_STOP_TIMEOUT: context deadline exceeded\"",
+            "url": "https://github.com/kubernetes/minikube/issues/10809"
+          },
+          {
+            "heading": "Add some more \"fine print\" to the installation requirements",
+            "url": "https://github.com/kubernetes/minikube/issues/10808"
+          },
+          {
+            "heading": "TestLogFile/SetLogFile fails: open ~/.minikube/logs/audit.json: no such file or directory",
+            "url": "https://github.com/kubernetes/minikube/issues/10804"
+          },
+          {
+            "heading": "Add Jenkins job to upload preloads for arm64",
+            "url": "https://github.com/kubernetes/minikube/issues/10803"
+          },
+          {
+            "heading": "test errror spam: unexpected stderr: \" > docker-machine-driver-kvm2.",
+            "url": "https://github.com/kubernetes/minikube/issues/10802"
+          }
+        ]
+      }
+    ]
+  }
+]
