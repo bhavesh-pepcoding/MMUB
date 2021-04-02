@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 // // let cond = true;
 // // let isitdone = new Promise(function (resolve,reject) {
 // //     if(cond) {
@@ -128,52 +130,64 @@
 
 // final answer of last promise
 
-let central = require('./central'),
-    db1 = require('./db1'),
-    db2 = require('./db2'),
-    db3 = require('./db3'),
-    vault = require('./vault'),
-    mark = require('./mark');
+// let central = require('./central'),
+//     db1 = require('./db1'),
+//     db2 = require('./db2'),
+//     db3 = require('./db3'),
+//     vault = require('./vault'),
+//     mark = require('./mark');
 
-module.exports = function (id) {
-    // TODO
-    // Reminder: The deadline is tomorrow !
-    return new Promise(function (resolve, reject) {
-        let obj = {};
-        obj["id"] = id;
-        Promise.all([central(id).then(function (data) {
-            if (data == 'db1') {
-                return [db1(id),"db1"];
-            } else if (data == 'db2') {
-                return [db2(id),"db2"];
-            } else if (data == 'db3') {
-                return [db3(id),"db3"]
-            }
-        }).catch(function (err) {
-            reject("Error central")
-        }),
-        vault(id).then(function(data){
-            return data;
-        }).catch(function (data) {
-            reject("Error vault")
-        })]).then(function (arr) {
-            arr[0][0].then(function (data) {
-                    obj['username'] = data.username;
-                    obj['country'] = data.country;
-                     mark(id).then(function () { }).catch(function (err) {
+// module.exports = function (id) {
+//     // TODO
+//     // Reminder: The deadline is tomorrow !
+//     return new Promise(function (resolve, reject) {
+//         let obj = {};
+//         obj["id"] = id;
+//         Promise.all([central(id).then(function (data) {
+//             if (data == 'db1') {
+//                 return [db1(id),"db1"];
+//             } else if (data == 'db2') {
+//                 return [db2(id),"db2"];
+//             } else if (data == 'db3') {
+//                 return [db3(id),"db3"]
+//             }
+//         }).catch(function (err) {
+//             reject("Error central")
+//         }),
+//         vault(id).then(function(data){
+//             return data;
+//         }).catch(function (data) {
+//             reject("Error vault")
+//         })]).then(function (arr) {
+//             arr[0][0].then(function (data) {
+//                     obj['username'] = data.username;
+//                     obj['country'] = data.country;
+//                      mark(id).then(function () { }).catch(function (err) {
 
-                    });
-                    resolve(obj);
+//                     });
+//                     resolve(obj);
 
-                }).catch(function (err) {
-                    reject("Error " + arr[0][1]);
-                })
-            obj["firstname"] = arr[1].firstname;
-            obj["lastname"] = arr[1].lastname;
-            obj["email"] = arr[1].email;
-        }).catch(function (error) {
-            reject(error)
+//                 }).catch(function (err) {
+//                     reject("Error " + arr[0][1]);
+//                 })
+//             obj["firstname"] = arr[1].firstname;
+//             obj["lastname"] = arr[1].lastname;
+//             obj["email"] = arr[1].email;
+//         }).catch(function (error) {
+//             reject(error)
 
-        })
-    })
-};
+//         })
+//     })
+// };
+
+
+async function readfile() {
+    try{
+        let data = await fs.promises.readFile("callback.js","utf-8");
+        console.log(data);
+    } catch(err) {
+        console.log("file not found")
+    }
+    
+}
+readfile();
