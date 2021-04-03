@@ -98,6 +98,31 @@ function solveQuestion(url) {
             }).then(function(){
                 let answerTypePromise = tab.type(".custominput",data);
                 return answerTypePromise;
+            }).then(function(){
+                let controlDownPromise = tab.keyboard.down("Control");
+                return controlDownPromise;
+            }).then(function(){
+                let aPressPromise = tab.keyboard.press("A");
+                return aPressPromise;
+            }).then(function(){
+                let xPressPromise = tab.keyboard.press("X");
+                return xPressPromise;
+            }).then(function(){
+                let editorClickPromise = tab.click(".monaco-scrollable-element.editor-scrollable.vs");
+                return editorClickPromise;
+            }).then(function(){
+                let aPressPromise = tab.keyboard.press("A");
+                return aPressPromise;
+            }).then(function(){
+                let vPressPromise = tab.keyboard.press("V");
+                return vPressPromise;
+            }).then(function(){
+                let controlUpPromise = tab.keyboard.up("Control");
+                return controlUpPromise;
+            }).then(function(){
+                return tab.click(".pull-right.btn.btn-primary.hr-monaco-submit")
+            }).then(function(){
+                return tab.waitForSelector(".congrats-wrapper");
             })
             
         }).then(function(){
