@@ -89,11 +89,17 @@ function solveQuestion(url) {
                 }
             }
         }).then(function(data){
-
-            // let editorClickPromise = tab.click(".monaco-scrollable-element.editor-scrollable.vs");
-            // return tab.keyboard.down("Control").then(function(){
-            //     return tab.keyboard.press("A")
-            // })
+            return tab.goto(problemUrl).then(function(){
+                let checkboxWaitPromise = tab.waitForSelector(".custom-input-checkbox", {visible: true});
+                return checkboxWaitPromise;
+            }).then(function(){
+                let checkboxClickPromise = tab.click(".custom-input-checkbox");
+                return checkboxClickPromise;
+            }).then(function(){
+                let answerTypePromise = tab.type(".custominput",data);
+                return answerTypePromise;
+            })
+            
         }).then(function(){
             resolve();
         });
