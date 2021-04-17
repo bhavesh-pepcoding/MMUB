@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+.main-container {
+    background-color: #15314b;
+    color: white;
+}
+
+.main-container, .input-container, .task-container {
+    border: 1px solid;
+}
+
+.input-container {
+    height: 20vh;
+}
+
+.task-container {
+    height: 80vh;
+}
+
+.task-input {
+    height: 4rem;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 30%;
+}
+
+.tasklist-item {
+    font-size: 1.5rem;
+    list-style: none;
+    width: 40%;
+    cursor: pointer;
+}
+
+
