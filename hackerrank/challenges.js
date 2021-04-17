@@ -29,6 +29,7 @@ async function main() {
         await createChallenge("https://www.hackerrank.com" + createChallengeUrl,challenges[i],await browser.newPage() );
     }
     
+    
 
 }
 
