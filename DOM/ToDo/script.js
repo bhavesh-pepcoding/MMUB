@@ -1,4 +1,5 @@
 let input = document.querySelector(".task-input");
+console.log(input);
 let ul = document.querySelector(".task-list");
 let lists = document.querySelectorAll(".task-list li");
 

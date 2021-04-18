@@ -13,24 +13,44 @@ body {
 
 .input-container {
     height: 20vh;
+    padding-top: 5vh;
+    /* text-align: center; */
 }
 
 .task-container {
-    height: 80vh;
+    min-height: 80vh;
 }
 
+.task-list {
+    margin: auto;
+    width: 40%;
+}
 .task-input {
     height: 4rem;
     font-size: 1.5rem;
     text-align: center;
     width: 30%;
+    margin: auto;
+    display: block;
 }
 
 .tasklist-item {
     font-size: 1.5rem;
     list-style: none;
-    width: 40%;
+    width: 100%;
     cursor: pointer;
+    background-color: #02203c;
+    margin-top: 10px;
+    height: 3rem;
+    text-align: center;
+    padding-top: 0.7rem;
+}
+
+@media screen and (max-width: 768px) {
+    .task-list,
+    .task-input {
+        width: 70%;
+    }
 }
 
 
