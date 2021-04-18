@@ -1,0 +1,96 @@
+body {
+     margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 12vh;
+    background-color: #333;
+    display: flex;
+}
+
+.ticket-container {
+    min-height: 88vh;
+    background-color: #f2f2f2;
+    padding: 2rem;
+}
+
+.filter-container, .add-delete-container {
+    margin-top: 2vh;
+    margin-left: 8vw;
+    background-color: #444;
+    height: 8vh;
+}
+
+.filter-container {
+    width: 18vw;
+    display: flex;
+}
+
+.add-delete-container {
+    width: 9vw;
+    display: flex;
+    padding: 0.7rem;
+}
+
+.filter, .add, .delete {
+    height: 100%;
+}
+
+.filter {
+    width: 25%;
+    
+}
+
+.add, .delete {
+    width: 50%;
+}
+
+.pink-color-btn,
+.blue-color-btn,
+.black-color-btn,
+.green-color-btn {
+    margin-left: 33%;
+    margin-top: 33%;
+    border-radius: 3px;
+    display: block;
+    width: 34%;
+    height: 34%;
+}
+
+.pink-color-btn {
+    background-color: pink;
+}
+
+.black-color-btn {
+    background-color: black;
+}
+
+.green-color-btn {
+    background-color: green;
+}
+
+.blue-color-btn {
+    background-color: blue;
+}
+
+
+.action-btn {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 0.7rem;
+    font-size: 2rem;
+}
+
+.action-btn:hover {
+    background-color: black;
+}
+
+.filter:hover {
+    background-color: black;
+}
