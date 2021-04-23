@@ -33,7 +33,6 @@ body {
 .add-delete-container {
     width: 9vw;
     display: flex;
-    padding: 0.7rem;
 }
 
 .filter, .add, .delete {
@@ -47,50 +46,90 @@ body {
 
 .add, .delete {
     width: 50%;
+    height: 100%;
 }
 
 .pink-color-btn,
 .blue-color-btn,
 .black-color-btn,
 .green-color-btn {
-    margin-left: 33%;
-    margin-top: 33%;
+    margin: calc(8vh * 0.25) calc(4.5vw * 0.25) calc(8vh * 0.25) calc(4.5vw * 0.25);
     border-radius: 3px;
     display: block;
-    width: 34%;
-    height: 34%;
+    width: 50%;
+    height: 50%;
 }
 
-.pink-color-btn {
+.pink-color-btn, .pink-modal-filter {
     background-color: pink;
 }
 
-.black-color-btn {
+.black-color-btn, .black-modal-filter {
     background-color: black;
 }
 
-.green-color-btn {
+.green-color-btn, .green-modal-filter {
     background-color: green;
 }
 
-.blue-color-btn {
+.blue-color-btn, .blue-modal-filter {
     background-color: blue;
 }
 
 
 .action-btn {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     text-align: center;
-    color: #ffffff;
-    padding-top: 0.7rem;
-    font-size: 2rem;
+    display: block;
+    background-color: white;
+    margin: calc(8vh * 0.25) calc(4.5vw * 0.25) calc(8vh * 0.25) calc(4.5vw * 0.25);
+
 }
 
-.action-btn:hover {
+.add:hover, .delete:hover {
     background-color: black;
+    cursor: pointer;
 }
 
 .filter:hover {
     background-color: black;
+    cursor: pointer;
+}
+
+.modal {
+    height: 18rem;
+    width: 35rem;
+    background-color: white;
+    display: flex;
+}
+
+.task-to-be-added {
+    height: 100%;
+    width: 70%;
+
+}
+
+.priority-list {
+    height: 100%;
+    width: 30%;
+    background-color: #444;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-filter {
+    width: 100%;
+    height: 20%;
+}
+
+.modal-filter:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.modal-filter.active {
+    border: 5px solid;
 }
