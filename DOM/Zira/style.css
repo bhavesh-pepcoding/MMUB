@@ -16,6 +16,7 @@ body {
     min-height: 88vh;
     background-color: #f2f2f2;
     padding: 2rem;
+    position: relative;
 }
 
 .filter-container, .add-delete-container {
@@ -51,7 +52,7 @@ body {
 
 .pink-color-btn,
 .blue-color-btn,
-.black-color-btn,
+.yellow-color-btn,
 .green-color-btn {
     margin: calc(8vh * 0.25) calc(4.5vw * 0.25) calc(8vh * 0.25) calc(4.5vw * 0.25);
     border-radius: 3px;
@@ -64,8 +65,8 @@ body {
     background-color: pink;
 }
 
-.black-color-btn, .black-modal-filter {
-    background-color: black;
+.yellow-color-btn, .yellow-modal-filter {
+    background-color: yellow;
 }
 
 .green-color-btn, .green-modal-filter {
@@ -102,6 +103,10 @@ body {
     width: 35rem;
     background-color: white;
     display: flex;
+    box-shadow: 0px 0px 50px 10px grey;
+    position: absolute;
+    top: calc((88vh - 18rem) / 2);
+    left: calc((100vw - 35rem) / 2);
 }
 
 .task-to-be-added {
@@ -132,4 +137,13 @@ body {
 
 .modal-filter.active {
     border: 5px solid;
+}
+
+.task-to-be-added {
+    padding: 3rem;
+    outline: none;
+}
+
+.placeholder {
+    color: gray;
 }
