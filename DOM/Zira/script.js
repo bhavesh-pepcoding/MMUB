@@ -1,6 +1,7 @@
 let TC = document.querySelector(".ticket-container");
 let allFilters = document.querySelectorAll(".filter");
 let modalVisible = false;
+let selectedPriority = "pink";
 
 for (let i = 0; i < allFilters.length; i++) {
     allFilters[i].addEventListener("click", filterHandler);
@@ -28,13 +29,15 @@ function showModal(e) {
                     </div>
                 </div>`;
     TC.innerHTML = TC.innerHTML + modal;
+    selectedPriority = "pink";
     let taskTyper = document.querySelector(".task-to-be-added");
     taskTyper.addEventListener("click", function(e) {
         if(e.currentTarget.getAttribute("data-type") == "false") {
             e.currentTarget.innerHTML = "";
             e.currentTarget.setAttribute("data-type","true");
         }
-    })
+    });
+    taskTyper.addEventListener("keypress", addTicket.bind(this,taskTyper));
     modalVisible= true;
     let modalFilters = document.querySelectorAll(".modal-filter");
 
@@ -47,5 +50,24 @@ function showModal(e) {
 function selectPriority(e) {
     let activeFilter = document.querySelector(".modal-filter.active");
     activeFilter.classList.remove("active");
+    selectedPriority = e.currentTarget.classList[0].split("-")[0];
     e.currentTarget.classList.add("active");
+}
+
+function addTicket(taskTyper,e) {
+    if(e.key == "Enter" && e.shiftKey == false && taskTyper.innerText.trim() != "") {
+        let ticket = `<div class="ticket">
+                        <div class="ticket-color ticket-color-${selectedPriority}"></div>
+                        <div class="ticket-id">#abdhjf</div>
+                        <div class="task">
+                            ${taskTyper.innerText}
+                        </div>
+                    </div>`;
+        document.querySelector(".modal").remove();
+        modalVisible = false;
+        TC.innerHTML = TC.innerHTML + ticket;
+    } else if(e.key == "Enter" && e.shiftKey == false) {
+        e.preventDefault();
+        alert("you have not typed anything");
+    }
 }
