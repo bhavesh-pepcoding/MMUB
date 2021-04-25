@@ -81,7 +81,7 @@ function addTicket(taskTyper,e) {
 }
 
 deleteButton.addEventListener("click", function(e) {
-    let selectedTickets = document.querySelectorAll(".ticket.active").remove();
+    let selectedTickets = document.querySelectorAll(".ticket.active");
     for(let i = 0; i < selectedTickets.length; i++) {
         selectedTickets[i].remove();
     } 
