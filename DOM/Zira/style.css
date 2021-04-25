@@ -99,6 +99,11 @@ body {
 .filter:hover {
     background-color: black;
     cursor: pointer;
+    opacity: 0.5;
+}
+
+.filter.active {
+    background-color: black;
 }
 
 .modal {
