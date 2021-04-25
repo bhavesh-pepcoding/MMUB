@@ -158,6 +158,10 @@ body {
     /* margin: 0 auto 0 auto; */
 }
 
+.ticket.active {
+    box-shadow: 0 0 5px 1px;
+}
+
 .ticket-color {
     height: 6%;
     width: 100%;
