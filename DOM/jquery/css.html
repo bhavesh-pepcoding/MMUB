@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- ADD background color(sing;e css property addition) -->
+
+    <!-- <div style="width: 300px; height: 300px;"></div>
+    <button>add bgcolor</button>
+    <script>
+        $("button").click(function(e){
+            $("div").css("background-color","blue");
+        })
+    </script> -->
+
+    <!-- ADD multiple css properties -->
+
+    <!-- <div>hello</div>
+    <button>add bgcolor</button>
+    <script>
+        $("button").click(function(e){
+            $("div").css({ "background-color" : "yellow", "width": "300px", "height": "300px"});
+        })
+    </script> -->
+
+    <!-- get css property -->
+
+    <div style="width: 100px; height: 300px;"></div>
+    <button>get width</button>
+    <script>
+        $("button").click(function(e){
+            console.log($("div").css("width"));
+            // console.log($("div").css(["width","height"]));
+        })
+    </script>
+</body>
+</html>
