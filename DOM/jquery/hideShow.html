@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button class="hide">hide</button>
+    <button class="show">show</button>
+    <button class="toggle">toggle</button>
+    <p>I have power to be visible and invisible</p>
+    <script>
+        $(".hide").click(function(e) {
+            $("p").hide(); //set display none property
+        });
+
+        $(".show").click(function(e){
+            $("p").show(); //removes display none property
+        });
+
+        $(".toggle").click(function(e){
+            $("p").toggle(); //toggles display none property
+        })
+    </script>
+</body>
+</html>
