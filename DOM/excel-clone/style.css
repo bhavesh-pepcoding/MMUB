@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 * {
@@ -136,5 +137,51 @@ body {
     background-color: #fff;
 }
 
+.data-container {
+    display: flex;
+    height: 76vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: scroll;
+    width: 100vw;
+}
+
+#select-all {
+    width: 25px;
+    height: 25px;
+    border: 1px solid lightgray;
+}
+
+#columns {
+    height: 25px;
+    width: calc(100vw - 42px);
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: row;
+}
+
+#rows {
+    width: 25px;
+    height: calc(76vh - 42px);
+    border: 1px solid lightgray;
+}
+
+#cells {
+    width: calc(100vw - 42px);
+    height: calc(76vh - 42px);
+    border: 1px solid lightgray;
+}
+
+.column-name {
+    min-width: 60px;
+    width: 60px;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
 
 
