@@ -99,23 +99,41 @@ body {
     display: flex;
     flex-direction: row;
     height: 5vh;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: lightgray;
 }
 
 #selected-cell {
-    width: 10vw;
-    border: 1px solid;
+    width: 120px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #fff;
 }
 
 #formula-sign {
-    width: 5vw;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 70%;
 }
 
 #formula-input {
-    width: 85vw;
-    border: 1px solid;
+    width: calc(100vw - 160px);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #fff;
 }
 
 
