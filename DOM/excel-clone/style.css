@@ -80,9 +80,42 @@ body {
 .menu-selector {
     height: 4.5vh;
     font-size: 1.2rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+}
+
+#font-family {
     width: 10vw;
     min-width: 130px;
     font-family: Noto Sans;
+}
+
+#font-size {
+    width: 3.5vw;
+    min-width: 55px;
+}
+
+.formula-bar {
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+}
+
+#selected-cell {
+    width: 10vw;
+    border: 1px solid;
+}
+
+#formula-sign {
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formula-input {
+    width: 85vw;
+    border: 1px solid;
 }
 
 
