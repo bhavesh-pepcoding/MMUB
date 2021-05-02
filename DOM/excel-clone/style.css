@@ -56,5 +56,34 @@ body {
     cursor: default;
 }
 
+.menu-icon-bar {
+    display: flex;
+    flex-direction: row;
+    height: 6vh;
+    align-items: center;
+}
+
+.menu-icon {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-icon:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.menu-selector {
+    height: 4.5vh;
+    font-size: 1.2rem;
+    width: 10vw;
+    min-width: 130px;
+    font-family: Noto Sans;
+}
+
 
 
