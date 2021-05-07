@@ -206,6 +206,35 @@ body {
     height: 25px;
     border-bottom: 1px solid lightgray;
     border-right: 1px solid lightgray;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 14px;
+    font-family: Noto Sans;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    outline-color: #217346;
+}
+
+.input-cell.selected {
+    border: 2px solid #217346;
+}
+
+.input-cell.top-selected {
+    border-top: none;
+}
+
+.input-cell.bottom-selected {
+    border-bottom: 1px solid lightgray;
+}
+
+.input-cell.left-selected {
+    border-left: none;
+}
+
+.input-cell.right-selected {
+    border-right: 1px solid lightgray;
 }
 
 
