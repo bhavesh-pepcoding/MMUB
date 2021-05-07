@@ -34,6 +34,7 @@ $("#cells").scroll(function(e) {
 });
 
 $(".input-cell").dblclick(function(e) {
+    $(".input-cell.selected").removeClass("selected top-selected bottom-selected left-selected right-selected");
     $(this).attr("contenteditable", "true");
     $(this).focus();
 });
@@ -68,23 +69,25 @@ $(".input-cell").click(function(e) {
 });
 
 function unselectCell(ele,e,topCell,bottomCell,leftCell,rightCell) {
-    if($(ele).hasClass("top-selected")) {
-        topCell.removeClass("bottom-selected");
+    if($(ele).attr("contenteditable") == "false") {
+        if($(ele).hasClass("top-selected")) {
+            topCell.removeClass("bottom-selected");
+        }
+    
+        if($(ele).hasClass("bottom-selected")) {
+            bottomCell.removeClass("top-selected");
+        }
+    
+        if($(ele).hasClass("left-selected")) {
+            leftCell.removeClass("right-selected");
+        }
+    
+        if($(ele).hasClass("right-selected")) {
+            rightCell.removeClass("left-selected");
+        }
+    
+        $(ele).removeClass("selected top-selected bottom-selected left-selected right-selected");
     }
-
-    if($(ele).hasClass("bottom-selected")) {
-        bottomCell.removeClass("top-selected");
-    }
-
-    if($(ele).hasClass("left-selected")) {
-        leftCell.removeClass("right-selected");
-    }
-
-    if($(ele).hasClass("right-selected")) {
-        rightCell.removeClass("left-selected");
-    }
-
-    $(ele).removeClass("selected top-selected bottom-selected left-selected right-selected");
 
 }
 
