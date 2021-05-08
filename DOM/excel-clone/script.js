@@ -152,9 +152,9 @@ let scrollXLStarted = false;
 $(".input-cell").mousemove(function (e) {
     e.preventDefault();
     if (e.buttons == 1) {
-        if(e.pageX > ($(window).width() - 100) && !scrollXRStarted) {
+        if(e.pageX > ($(window).width() - 10) && !scrollXRStarted) {
             scrollXR();
-        } else if(e.pageX < (100) && !scrollXLStarted) {
+        } else if(e.pageX < (10) && !scrollXLStarted) {
             scrollXL();
         }
         if (!startcellSelected) {
@@ -170,12 +170,12 @@ $(".input-cell").mousemove(function (e) {
 
 $(".input-cell").mouseenter(function (e) {
     if (e.buttons == 1) {
-        if(e.pageX < ($(window).width() - 100) && scrollXRStarted) {
+        if(e.pageX < ($(window).width() - 10) && scrollXRStarted) {
             clearInterval(scrollXRInterval);
             scrollXRStarted = false;
         }
 
-        if(e.pageX > 100 && scrollXLStarted) {
+        if(e.pageX > 10 && scrollXLStarted) {
             clearInterval(scrollXLInterval);
             scrollXLStarted = false;
         }
@@ -212,7 +212,18 @@ function scrollXL() {
     }, 100);
 }
 
-$(".input-cell").mouseup(function(e) {
+$(".data-container").mousemove(function(e){
+    e.preventDefault();
+    if (e.buttons == 1) {
+        if(e.pageX > ($(window).width() - 10) && !scrollXRStarted) {
+            scrollXR();
+        } else if(e.pageX < (10) && !scrollXLStarted) {
+            scrollXL();
+        }
+    }
+});
+
+$(".data-container").mouseup(function(e) {
     clearInterval(scrollXRInterval);
     clearInterval(scrollXLInterval);
     scrollXRStarted = false;
