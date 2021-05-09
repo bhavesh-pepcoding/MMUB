@@ -167,10 +167,16 @@ function changeHeader([rowId,colId]) {
     let data = cellData[rowId-1][colId-1];
     $(".alignment.selected").removeClass("selected");
     $(`.alignment[data-type=${data.alignment}]`).addClass("selected");
-    if(data.bold) {
-        $('#bold').addClass("selected");
+   addRemoveSelectFromFontStyle(data,"bold");
+   addRemoveSelectFromFontStyle(data,"italic");
+   addRemoveSelectFromFontStyle(data,"underlined");
+}
+
+function addRemoveSelectFromFontStyle(data,property) {
+    if(data[property]) {
+        $(`#${property}`).addClass("selected");
     } else {
-        $('#bold').removeClass("selected");
+        $(`#${property}`).removeClass("selected");
     }
 }
 
@@ -273,19 +279,31 @@ $(".alignment").click(function(e) {
 });
 
 $("#bold").click(function(e) {
-    if($(this).hasClass("selected")) {
-        $(this).removeClass("selected");
-        $(".input-cell.selected").css("font-weight","");
+    setStyle(this,"bold","font-weight","bold");
+});
+
+$("#italic").click(function(e) {
+    setStyle(this,"italic","font-style","italic");
+});
+
+$("#underlined").click(function(e) {
+    setStyle(this,"underlined","text-decoration","underline");
+});
+
+function setStyle(ele,property,key,value) {
+    if($(ele).hasClass("selected")) {
+        $(ele).removeClass("selected");
+        $(".input-cell.selected").css(key,"");
         $(".input-cell.selected").each(function(index,data){
             let [rowId,colId] = getRowCol(data);
-            cellData[rowId-1][colId-1].bold = false;
+            cellData[rowId-1][colId-1][property] = false;
         });
     } else {
-        $(this).addClass("selected");
-        $(".input-cell.selected").css("font-weight","bold");
+        $(ele).addClass("selected");
+        $(".input-cell.selected").css(key,value);
         $(".input-cell.selected").each(function(index,data){
             let [rowId,colId] = getRowCol(data);
-            cellData[rowId-1][colId-1].bold = true;
+            cellData[rowId-1][colId-1][property] = true;
         });
     }
-})
+} 
