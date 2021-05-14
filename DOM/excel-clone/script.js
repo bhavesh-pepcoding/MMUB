@@ -169,18 +169,22 @@ function selectCell(ele, e, topCell, bottomCell, leftCell, rightCell) {
 
 
 function changeHeader([rowId, colId]) {
-    console.log(cellData);
-    // let data = cellData[rowId - 1][colId - 1];
-    // $(".alignment.selected").removeClass("selected");
-    // $(`.alignment[data-type=${data.alignment}]`).addClass("selected");
-    // addRemoveSelectFromFontStyle(data, "bold");
-    // addRemoveSelectFromFontStyle(data, "italic");
-    // addRemoveSelectFromFontStyle(data, "underlined");
-    // $("#fill-color").css("border-bottom", `4px solid ${data.bgcolor}`);
-    // $("#text-color").css("border-bottom", `4px solid ${data.color}`);
-    // $("#font-family").val(data["font-family"]);
-    // $("#font-size").val(data["font-size"]);
-    // $("#font-family").css("font-family", data["font-family"]);
+    let data;
+    if(cellData[selectedSheet][rowId - 1] && cellData[selectedSheet][rowId - 1][colId - 1]) {
+        data = cellData[selectedSheet][rowId - 1][colId - 1];
+    } else {
+        data = defaultProperties;
+    }
+    $(".alignment.selected").removeClass("selected");
+    $(`.alignment[data-type=${data.alignment}]`).addClass("selected");
+    addRemoveSelectFromFontStyle(data, "bold");
+    addRemoveSelectFromFontStyle(data, "italic");
+    addRemoveSelectFromFontStyle(data, "underlined");
+    $("#fill-color").css("border-bottom", `4px solid ${data.bgcolor}`);
+    $("#text-color").css("border-bottom", `4px solid ${data.color}`);
+    $("#font-family").val(data["font-family"]);
+    $("#font-size").val(data["font-size"]);
+    $("#font-family").css("font-family", data["font-family"]);
 }
 
 function addRemoveSelectFromFontStyle(data, property) {
@@ -401,10 +405,13 @@ function updateCellData(property,value) {
     } else {
         $(".input-cell.selected").each(function (index, data) {
             let [rowId, colId] = getRowCol(data);
-            if (cellData[selectedSheet][rowId - 1][colId - 1] != undefined) {
+            if (cellData[selectedSheet][rowId - 1] && cellData[selectedSheet][rowId - 1][colId - 1]) {
                 cellData[selectedSheet][rowId - 1][colId - 1][property] = value;
                 if (JSON.stringify(cellData[selectedSheet][rowId - 1][colId - 1]) == JSON.stringify(defaultProperties)) {
                     delete cellData[selectedSheet][rowId - 1][colId - 1];
+                    if(Object.keys(cellData[selectedSheet][rowId - 1]).length == 0) {
+                        delete cellData[selectedSheet][rowId - 1];
+                    }
                 }
             }
         });
