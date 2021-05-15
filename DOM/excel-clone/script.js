@@ -27,6 +27,7 @@ let cellData = {
 
 let selectedSheet = "Sheet1";
 let totalSheets = 1;
+let lastlyAddedSheet = 1;
 
 let defaultProperties = {
     "font-family": "Noto Sans",
@@ -415,5 +416,92 @@ function updateCellData(property,value) {
                 }
             }
         });
+    }
+}
+
+function addSheetEvents() {
+    $(".sheet-tab.selected").on("contextmenu", function(e) {
+        e.preventDefault();
+        $(".sheet-options-modal").remove();
+        let modal = $(`<div class="sheet-options-modal">
+                        <div class="option sheet-rename">Rename</div>
+                        <div class="option sheet-delete">Delete</div>
+                    </div>`);
+        modal.css({"left": e.pageX});
+        $(".container").append(modal);
+    });
+
+    $(".sheet-tab.selected").click(function(e) {
+        $(".sheet-tab.selected").removeClass("selected");
+        $(this).addClass("selected");
+        selectSheet();
+    });
+}
+
+addSheetEvents();
+
+$(".add-sheet").click(function(e) {
+    lastlyAddedSheet++;
+    totalSheets++;
+    cellData[`Sheet${lastlyAddedSheet}`] = {};
+    $(".sheet-tab.selected").removeClass("selected");
+    $(".sheet-tab-container").append(`<div class="sheet-tab selected">Sheet${lastlyAddedSheet}</div>`);
+    selectSheet();
+    addSheetEvents();
+})
+
+
+
+function selectSheet() {
+    emptyPreviousSheet();
+    selectedSheet = $(".sheet-tab.selected").text();
+    loadCurrentSheet();
+}
+
+function emptyPreviousSheet() {
+    let data = cellData[selectedSheet];
+    let rowKeys = Object.keys(data);
+    for(let i of rowKeys) {
+        let rowId = parseInt(i);
+        let colKeys = Object.keys(data[rowId]);
+        for(let j of colKeys) {
+            let colId = parseInt(j);
+            let cell = $(`#row-${rowId+1}-col-${colId+1}`);
+            cell.text("");
+            cell.css({
+                "font-family" : "NotoSans",
+                "font-size" : 14,
+                "background-color" : "#fff",
+                "color" : "#444",
+                "font-weight" : "",
+                "font-style" : "",
+                "text-decoration" : "",
+                "text-align" : "left"
+            });
+        }
+    }
+}
+
+function loadCurrentSheet() {
+    let data = cellData[selectedSheet];
+    let rowKeys = Object.keys(data);
+    for(let i of rowKeys) {
+        let rowId = parseInt(i);
+        let colKeys = Object.keys(data[rowId]);
+        for(let j of colKeys) {
+            let colId = parseInt(j);
+            let cell = $(`#row-${rowId+1}-col-${colId+1}`);
+            cell.text(data[rowId][colId].text);
+            cell.css({
+                "font-family" : data[rowId][colId]["font-family"],
+                "font-size" : data[rowId][colId]["font-size"],
+                "background-color" : data[rowId][colId]["bgcolor"],
+                "color" : data[rowId][colId].color,
+                "font-weight" : data[rowId][colId].bold ? "bold" : "",
+                "font-style" : data[rowId][colId].italic ? "italic" : "",
+                "text-decoration" : data[rowId][colId].underlined ? "underline" : "",
+                "text-align" : data[rowId][colId].alignment
+            });
+        }
     }
 }
