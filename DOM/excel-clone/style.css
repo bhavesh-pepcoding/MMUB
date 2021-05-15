@@ -316,6 +316,11 @@ body {
     margin-right: 10px;
 }
 
+.add-sheet:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 .sheet-options-modal {
     position: absolute;
     background-color: #fff;
@@ -330,4 +335,13 @@ body {
 .option:hover {
     background-color: lightgray;
     cursor: default;
+}
+
+.scroller {
+    font-size: 30px;
+}
+
+.scroller:hover {
+    cursor: pointer;
+    background-color: lightgray;
 }

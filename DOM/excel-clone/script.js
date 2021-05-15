@@ -418,10 +418,15 @@ function updateCellData(property,value) {
         });
     }
 }
-
+$(".container").click(function(e) {
+    $(".sheet-options-modal").remove();
+});
 function addSheetEvents() {
     $(".sheet-tab.selected").on("contextmenu", function(e) {
         e.preventDefault();
+        $(".sheet-tab.selected").removeClass("selected");
+        $(this).addClass("selected");
+        selectSheet();
         $(".sheet-options-modal").remove();
         let modal = $(`<div class="sheet-options-modal">
                         <div class="option sheet-rename">Rename</div>
@@ -448,14 +453,13 @@ $(".add-sheet").click(function(e) {
     $(".sheet-tab-container").append(`<div class="sheet-tab selected">Sheet${lastlyAddedSheet}</div>`);
     selectSheet();
     addSheetEvents();
-})
-
-
+});
 
 function selectSheet() {
     emptyPreviousSheet();
     selectedSheet = $(".sheet-tab.selected").text();
     loadCurrentSheet();
+    $("#row-1-col-1").click();
 }
 
 function emptyPreviousSheet() {
