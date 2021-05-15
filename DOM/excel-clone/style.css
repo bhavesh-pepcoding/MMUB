@@ -345,3 +345,81 @@ body {
     cursor: pointer;
     background-color: lightgray;
 }
+
+
+.sheet-modal-parent {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top:0;
+    background-color: rgba(68, 68, 68, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sheet-rename-modal {
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgb(88, 88, 88);
+    padding: 15px;
+    min-width: 400px;
+    width: 30vw;
+}
+
+.sheet-modal-title {
+    text-align: center;
+    font-size: 26px;
+    color: #217346;
+    font-weight: bold;
+}
+
+.sheet-modal-input-container {
+    padding: 20px;
+}
+
+.sheet-modal-input-title {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.sheet-modal-input {
+    width: 100%;
+    height: 2rem;
+    font-size: 1.2rem;
+    outline-color: #217346;
+}
+
+.sheet-modal-confirmation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.button {
+    border: 1px solid;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.yes-button {
+    background-color: #217346;
+    color: #fff;
+}
+
+.yes-button:hover {
+    background-color: #1d633c;
+    cursor: pointer;
+}
+
+.no-button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
