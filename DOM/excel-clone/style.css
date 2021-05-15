@@ -435,3 +435,9 @@ body {
 .delete-icon {
     margin-right: 5px;
 }
+
+.rename-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px ;
+}
