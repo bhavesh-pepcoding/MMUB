@@ -358,7 +358,7 @@ body {
     align-items: center;
 }
 
-.sheet-rename-modal {
+.sheet-rename-modal,.sheet-delete-modal {
     background-color: #fff;
     box-shadow: 0 8px 16px 0 rgb(88, 88, 88);
     padding: 15px;
@@ -373,11 +373,19 @@ body {
     font-weight: bold;
 }
 
-.sheet-modal-input-container {
+.sheet-modal-input-container, .sheet-modal-detail-container {
     padding: 20px;
 }
 
-.sheet-modal-input-title {
+.sheet-modal-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sheet-modal-input-title, .sheet-modal-detail-title{
     display: block;
     margin-bottom: 10px;
     font-weight: 600;
@@ -422,4 +430,8 @@ body {
 .no-button:hover {
     background-color: lightgray;
     cursor: pointer;
+}
+
+.delete-icon {
+    margin-right: 5px;
 }
