@@ -658,7 +658,7 @@ $("#menu-file").click(function (e) {
     fileModal.animate({
         width: "100vw"
     }, 300);
-    $(".close,.file-transparent,.new").click(function (e) {
+    $(".close,.file-transparent,.new,.save").click(function (e) {
         fileModal.animate({
             width: "0vw"
         }, 300);
@@ -693,6 +693,10 @@ $("#menu-file").click(function (e) {
             });
         }
     });
+    $(".save").click(function(e){
+        saveFile();
+    })
+    
 });
 
 function newFile() {
@@ -706,4 +710,33 @@ function newFile() {
     lastlyAddedSheet = 1;
     $(".title").text("Excel - Book");
     $("#row-1-col-1").click();
+}
+
+function saveFile() {
+    $(".container").append(`<div class="sheet-modal-parent">
+                                <div class="sheet-rename-modal">
+                                    <div class="sheet-modal-title">Save File</div>
+                                    <div class="sheet-modal-input-container">
+                                        <span class="sheet-modal-input-title">File Name:</span>
+                                        <input class="sheet-modal-input" value="${$(".title").text()}" type="text" />
+                                    </div>
+                                    <div class="sheet-modal-confirmation">
+                                        <div class="button yes-button">Save</div>
+                                        <div class="button no-button">Cancel</div>
+                                    </div>
+                                </div>
+                            </div>`);
+    $(".yes-button").click(function(e) {
+        $(".title").text($(".sheet-modal-input").val());
+        let a = document.createElement("a");
+        a.href = `data:application/json,${JSON.stringify(cellData)}`;
+        a.download = $(".title").text() + ".json";
+        $(".container").append(a);
+        a.click();
+        a.remove();
+        save = true;
+    });
+    $(".no-button,.yes-button").click(function (e) {
+        $(".sheet-modal-parent").remove();
+    });
 }
