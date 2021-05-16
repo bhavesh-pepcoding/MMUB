@@ -447,12 +447,12 @@ body {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 50vw;
+    width: 0vw;
     display: flex;
 }
 
 .file-options-modal {
-    width: 15rem;
+    width: 12rem;
     background-color: #217346;
     height: 100%;
     color: #fff;
@@ -461,7 +461,7 @@ body {
 .file-recent-modal {
     background-color: #fff;
     height: 100%;
-    width: 100%;
+    width: calc(50% - 12rem);
 }
 
 .close,.new, .open, .save {
@@ -479,7 +479,7 @@ body {
 .close-icon,.new-icon, .open-icon, .save-icon {
     
     position: absolute;
-    left: 1rem;
+    left: 2rem;
 }
 
 .close {
@@ -494,4 +494,9 @@ body {
 .close:hover, .new:hover, .open:hover, .save:hover {
     background-color: #1e663f;
     cursor: pointer;
+}
+
+.file-transparent {
+    width: 50%;
+    height: 100vh;
 }
