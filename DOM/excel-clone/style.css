@@ -464,27 +464,34 @@ body {
     width: 100%;
 }
 
-.close {
+.close,.new, .open, .save {
     display: flex;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
     justify-content: center;
-    font-weight: 300;
+    font-weight: 100;
     position: relative;
 }
 
-.close-icon {
-    transform: rotate(90deg);
+.close-icon,.new-icon, .open-icon, .save-icon {
+    
     position: absolute;
     left: 1rem;
 }
 
-.close:hover {
+.close {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.close-icon {
+    transform: rotate(90deg);
+}
+
+.close:hover, .new:hover, .open:hover, .save:hover {
     background-color: #1e663f;
     cursor: pointer;
 }
