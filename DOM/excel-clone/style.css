@@ -441,3 +441,50 @@ body {
     font-size: 14px;
     margin-top: 5px ;
 }
+
+.file-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+}
+
+.file-options-modal {
+    width: 15rem;
+    background-color: #217346;
+    height: 100%;
+    color: #fff;
+}
+
+.file-recent-modal {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+.close {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    font-size: 20px;
+    justify-content: center;
+    font-weight: 300;
+    position: relative;
+}
+
+.close-icon {
+    transform: rotate(90deg);
+    position: absolute;
+    left: 1rem;
+}
+
+.close:hover {
+    background-color: #1e663f;
+    cursor: pointer;
+}
