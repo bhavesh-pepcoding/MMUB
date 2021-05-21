@@ -658,7 +658,7 @@ $("#menu-file").click(function (e) {
     fileModal.animate({
         width: "100vw"
     }, 300);
-    $(".close,.file-transparent,.new,.save").click(function (e) {
+    $(".close,.file-transparent,.new,.save,.open").click(function (e) {
         fileModal.animate({
             width: "0vw"
         }, 300);
@@ -684,17 +684,24 @@ $("#menu-file").click(function (e) {
                                             </div>
                                         </div>
                                     </div>`);
-            $(".yes-button").click(function (e) {
-                // save function
-            });
-            $(".no-button,.yes-button").click(function (e) {
+            $(".no-button").click(function (e) {
                 $(".sheet-modal-parent").remove();
                 newFile();
+            });
+            $(".yes-button").click(function (e) {
+                $(".sheet-modal-parent").remove();
+                saveFile(true);
             });
         }
     });
     $(".save").click(function(e){
-        saveFile();
+        if(!save) {
+            saveFile();
+        }
+    });
+
+    $(".open").click(function(e){
+        openFile();
     })
     
 });
@@ -712,7 +719,7 @@ function newFile() {
     $("#row-1-col-1").click();
 }
 
-function saveFile() {
+function saveFile(newClicked) {
     $(".container").append(`<div class="sheet-modal-parent">
                                 <div class="sheet-rename-modal">
                                     <div class="sheet-modal-title">Save File</div>
@@ -729,14 +736,54 @@ function saveFile() {
     $(".yes-button").click(function(e) {
         $(".title").text($(".sheet-modal-input").val());
         let a = document.createElement("a");
-        a.href = `data:application/json,${JSON.stringify(cellData)}`;
+        a.href = `data:application/json,${encodeURIComponent(JSON.stringify(cellData))}`;
         a.download = $(".title").text() + ".json";
         $(".container").append(a);
         a.click();
-        a.remove();
+        // a.remove();
         save = true;
+        
     });
     $(".no-button,.yes-button").click(function (e) {
         $(".sheet-modal-parent").remove();
+        if(newClicked) {
+            newFile();
+        }
+    });
+}
+
+function openFile() {
+    let inputFile = $(`<input accept="application/json" type="file" />`);
+    $(".container").append(inputFile);
+    inputFile.click();
+    inputFile.change(function(e) {
+        console.log(inputFile.val());
+        let file = e.target.files[0];
+        $(".title").text(file.name.split(".json")[0]);
+        let reader = new FileReader();
+        reader.readAsText(file);
+        reader.onload = () => {
+            emptyPreviousSheet();
+            $(".sheet-tab").remove();
+            cellData = JSON.parse(reader.result);
+            let sheets = Object.keys(cellData);
+            lastlyAddedSheet = 1;
+            for(let i of sheets) {
+                if(i.includes("Sheet")) {
+                    let splittedSheetArray = i.split("Sheet");
+                    if(splittedSheetArray.length == 2 && !isNaN(splittedSheetArray[1])) {
+                        lastlyAddedSheet = parseInt(splittedSheetArray[1]);
+                    }
+                }
+                $(".sheet-tab-container").append(`<div class="sheet-tab selected">${i}</div>`);
+            }
+            addSheetEvents();
+            $(".sheet-tab").removeClass("selected");
+            $($(".sheet-tab")[0]).addClass("selected");
+            selectedSheet = sheets[0];
+            totalSheets = sheets.length;
+            loadCurrentSheet();
+            inputFile.remove();
+        }
     });
 }
