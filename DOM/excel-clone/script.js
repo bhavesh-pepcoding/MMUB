@@ -40,7 +40,10 @@ let defaultProperties = {
     "underlined": false,
     "alignment": "left",
     "color": "#444",
-    "bgcolor": "#fff"
+    "bgcolor": "#fff",
+    "formula": "",
+    "upStream": [],
+    "downStream": [],
 };
 
 for (let i = 1; i <= 100; i++) {
@@ -217,6 +220,7 @@ $(".input-cell").mousemove(function (e) {
             startCell = { "rowId": rowId, "colId": colId };
             selectAllBetweenCells(startCell, startCell);
             startcellSelected = true;
+            $(".input-cell.selected").attr("contenteditable","false");
         }
     } else {
         startcellSelected = false;
@@ -394,11 +398,11 @@ function updateCellData(property, value) {
             let [rowId, colId] = getRowCol(data);
             if (cellData[selectedSheet][rowId - 1] == undefined) {
                 cellData[selectedSheet][rowId - 1] = {};
-                cellData[selectedSheet][rowId - 1][colId - 1] = { ...defaultProperties };
+                cellData[selectedSheet][rowId - 1][colId - 1] = { ...defaultProperties, "upStream" : [], "downStream": [] };
                 cellData[selectedSheet][rowId - 1][colId - 1][property] = value;
             } else {
                 if (cellData[selectedSheet][rowId - 1][colId - 1] == undefined) {
-                    cellData[selectedSheet][rowId - 1][colId - 1] = { ...defaultProperties };
+                    cellData[selectedSheet][rowId - 1][colId - 1] = { ...defaultProperties, "upStream" : [], "downStream": [] };
                     cellData[selectedSheet][rowId - 1][colId - 1][property] = value;
                 } else {
                     cellData[selectedSheet][rowId - 1][colId - 1][property] = value;
@@ -789,8 +793,11 @@ function openFile() {
 }
 
 let clipboard = {startCell : [], cellData: {}};
-
-$("#copy").click(function(e) {
+let contentCutted = false;
+$("#cut,#copy").click(function(e) {
+    if($(this).text() == "content_cut") {
+        contentCutted = true;
+    }
     clipboard = {startCell : [], cellData: {}};
     clipboard.startCell = getRowCol($(".input-cell.selected")[0]);
     $(".input-cell.selected").each(function(index,data) {
@@ -806,8 +813,23 @@ $("#copy").click(function(e) {
 });
 
 $("#paste").click(function(e) {
+    if(contentCutted) {
+        emptyPreviousSheet();
+    }
     let startCell = getRowCol($(".input-cell.selected")[0]);
     let rows = Object.keys(clipboard.cellData);
+    for(let i of rows) {
+        let cols = Object.keys(clipboard.cellData[i]);
+        for(let j of cols) {
+            if(contentCutted) {
+                delete cellData[selectedSheet][i-1][j-1];
+                if(Object.keys(cellData[selectedSheet][i-1]).length == 0) {
+                    delete cellData[selectedSheet][i-1];
+                }
+            }
+    
+        }
+    }
     for(let i of rows) {
         let cols = Object.keys(clipboard.cellData[i]);
         for(let j of cols) {
@@ -820,4 +842,26 @@ $("#paste").click(function(e) {
         }
     }
     loadCurrentSheet();
+    if(contentCutted) {
+        contentCutted = false;
+        clipboard = {startCell : [], cellData: {}};
+    }
+});
+
+$("#formula-input").blur(function(e) {
+    if($(".input-cell.selected").length > 0) {
+        let formula = $(this).text();
+        let tempElements = formula.split(" ");
+        let elements = [];
+        for(let i of tempElements) {
+            if(i.length >=2) {
+                i = i.replace("(","");
+                i = i.replace(")","");
+                elements.push(i);
+            }
+        }
+        console.log(elements);
+    } else {
+        alert("!Please select a cell First");
+    }
 })
